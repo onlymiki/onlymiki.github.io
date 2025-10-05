@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Zain:wght@300;400;700&display=swap');
+
+:root {
+    --color-blue: #1B5E92;
+    --color-white: #F5EDE2;
+    --color-light-blue: #DBE7F7;
+    --color-orange: #FF8D58;
+    --color-blue-grey: #8DAFC8;
+    --color-black: #202020;
+}
+
+body {
+    background-color: var(--color-blue);
+    margin: 0;
+    font-family: "Zain", sans-serif;
+}
+
+/* ----- Testi ------ */
+.white-text-title {
+    color: var(--color-white);
+    font-family: "Hachi Maru Pop", cursive;
+}
+
+.white-text {
+    color: var(--color-white);
+}
+
+/*----- Link ----- */
+a:hover {
+    color: var(--color-orange);
+}
+
+.active {
+    color: var(--color-orange);
+}
+
+/* ----- Header ------ */
+.header {
+    background-image: linear-gradient(to bottom, var(--color-black), var(--color-blue));
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+/* ----- Footer ------ */
+.footer {
+    background-image: linear-gradient(to bottom, var(--color-blue), var(--color-black));
+}
+
+.iconFooter {
+    height: 40px;
+}
+
+.socialCol {
+    position: relative;
+    padding-left: 40px;
+}
+
+.socialCol::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    border-radius: 2px;
+    background-color: var(--color-white);
+}
+
+@media (max-width: 586px) {
+    .socialCol::before {
+        display: none;
+    }
+}
