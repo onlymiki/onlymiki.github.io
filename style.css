@@ -15,7 +15,12 @@ body {
     font-family: "Zain", sans-serif;
 }
 
-/* ----- Testi ------ */
+/* ----- Text and title ------ */
+.orange-text-title{
+    color: var(--color-orange);
+    font-family: "Hachi Maru Pop", cursive;
+}
+
 .white-text-title {
     color: var(--color-white);
     font-family: "Hachi Maru Pop", cursive;
@@ -23,15 +28,36 @@ body {
 
 .white-text {
     color: var(--color-white);
+    font-size: 20px;
 }
 
-/*----- Link ----- */
+/* ----- Link ----- */
 a:hover {
     color: var(--color-orange);
 }
 
 .active {
     color: var(--color-orange);
+}
+
+/* ----- Button ----- */
+.light-blue-btn{
+    background-color: var(--color-light-blue);
+    color: var(--color-blue);
+    font-family: "Hachi Maru Pop", cursive;
+    width: 150px;
+    height: 50px;
+}
+
+.light-blue-btn:hover{
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    font-family: "Hachi Maru Pop", cursive;
+}
+
+/* ----- Img ----- */
+.img-portrait{
+    max-height: 300px;
 }
 
 /* ----- Header ------ */
