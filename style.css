@@ -89,8 +89,8 @@ a:hover {
     max-height: 300px;
 }
 
-.decoration{
-    top:350px;
+.decoration {
+    top: 350px;
 }
 
 .diamond {
@@ -98,6 +98,40 @@ a:hover {
     width: 100px;
     height: 100px;
     transform: rotate(45deg);
+}
+
+.orange-diamonds {
+    top: 0;
+    height: 100%;
+    z-index: 15;
+    pointer-events: none;
+    /* non blocca i clic sotto */
+    width: 50px;
+    /* piccolo margine orizzontale */
+}
+
+/* Forma dei rombi */
+.diamond-shape {
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-orange);
+    transform: rotate(45deg);
+    position: absolute;
+    left: 20px;
+    border-radius: 2px;
+}
+
+/* Posizionamento verticale dei 3 rombi */
+.diamond1 {
+    top: 120px;
+}
+
+.diamond2 {
+    top: 330px;
+}
+
+.diamond3 {
+    top: 530px;
 }
 
 .no-rotate {
@@ -146,5 +180,30 @@ a:hover {
 @media (max-width: 586px) {
     .socialCol::before {
         display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .decoration {
+        width: 30px !important;
+        top: 400px;
+    }
+
+    .diamond2 {
+        top: 370px;
+    }
+
+    .diamond3 {
+        top: 630px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .diamond2 {
+        top: 300px;
+    }
+
+    .diamond3 {
+        top: 480px;
     }
 }
