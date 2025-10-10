@@ -74,14 +74,18 @@ a:hover {
     background-color: var(--color-light-blue);
     color: var(--color-blue);
     font-family: "Hachi Maru Pop", cursive;
-    width: 150px;
-    height: 50px;
+    width: 160px;
+    height: 55px;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+   clip-path: path("M20 0 L140 0 L160 25 L140 50 L20 50 L0 25 Z");
 }
 
 .light-blue-btn:hover {
     background-color: var(--color-orange);
     color: var(--color-white);
-    font-family: "Hachi Maru Pop", cursive;
+    transform: scale(1.05);
 }
 
 /* ----- Img ----- */
@@ -89,8 +93,9 @@ a:hover {
     max-height: 300px;
 }
 
+/* ----- Decoration ----- */
 .decoration {
-    top: 350px;
+    top: 460px;
 }
 
 .diamond {
@@ -121,17 +126,21 @@ a:hover {
     border-radius: 2px;
 }
 
-/* Posizionamento verticale dei 3 rombi */
 .diamond1 {
     top: 120px;
 }
 
 .diamond2 {
-    top: 330px;
+    top: 360px;
 }
 
 .diamond3 {
-    top: 530px;
+    top: 595px;
+}
+
+.star1 {
+    width: 50px;
+    top: 1345px;
 }
 
 .no-rotate {
@@ -181,29 +190,56 @@ a:hover {
     .socialCol::before {
         display: none;
     }
+
+    .star1 {
+        display: none;
+    }
+}
+
+@media (max-width: 1199px) {
+    .diamond2 {
+        top: 420px;
+    }
+
+    .diamond3 {
+        top: 715px;
+    }
+
+    .star1 {
+        top: 1585px;
+    }
 }
 
 @media (max-width: 991px) {
     .decoration {
-        width: 30px !important;
-        top: 400px;
+        width: 32px !important;
+        top: 470px;
+
     }
 
     .diamond2 {
-        top: 370px;
+        top: 440px;
     }
 
     .diamond3 {
-        top: 630px;
+        top: 770px;
+    }
+
+    .star1 {
+        top: 1760px;
     }
 }
 
 @media (min-width: 1400px) {
     .diamond2 {
-        top: 300px;
+        top: 360px;
     }
 
     .diamond3 {
-        top: 480px;
+        top: 595px;
+    }
+
+    .star1 {
+        top: 1320px;
     }
 }
