@@ -74,12 +74,13 @@ a:hover {
     background-color: var(--color-light-blue);
     color: var(--color-blue);
     font-family: "Hachi Maru Pop", cursive;
-    width: 160px;
-    height: 55px;
+
+    width: 220px;
+    height: 70px;
+    border: none;
     cursor: pointer;
     transition: 0.3s ease;
-
-   clip-path: path("M20 0 L140 0 L160 25 L140 50 L20 50 L0 25 Z");
+    clip-path: path("M110 0 Q140 25 210 35 Q140 45 110 70 Q80 45 10 35 Q80 25 110 0 Z");
 }
 
 .light-blue-btn:hover {
@@ -87,6 +88,8 @@ a:hover {
     color: var(--color-white);
     transform: scale(1.05);
 }
+
+
 
 /* ----- Img ----- */
 .img-portrait {
