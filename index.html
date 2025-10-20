@@ -45,7 +45,7 @@
     <!-- Home -->
     <div class="container my-5">
         <div class="align-items-center d-md-flex gap-5 justify-content-center text-center text-md-start">
-            <img src="img/immagine_curriculum.svg" class="img-fluid img-portrait pb-2 pb-md-0">
+            <img src="img/immagine_curriculum.svg" class="img-fluid img-home pb-2 pb-md-0">
             <div>
                 <h4 class="orange-text-title">Michela Mariani</h4>
                 <h5 class="pb-2 white-text-title">24 anni</h5>
@@ -63,13 +63,10 @@
                     tecnologie e linguaggi. Ho creato questo sito con lo scopo di illustrare brevemente quello su cui ho
                     lavorato.
                 </p>
-                <button
-                    class="align-items-center border-0 d-flex justify-content-center light-blue-btn px-2 position-relative">
-                    <span>More</span>
-                </button>
-
-
-
+                <div class="d-flex align-items-center justify-content-center justify-content-md-start w-100">
+                    <button class="border-0 d-flex light-blue-btn">
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -251,7 +248,7 @@
         <div class="splide__track">
             <ul class="splide__list">
                 <!-- SAM -->
-                <li
+                <li id="miniatura_sam"
                     class="splide__slide d-flex flex-md-row flex-column align-items-center text-center text-md-start px-3">
 
                     <!-- Immagine -->
@@ -263,12 +260,10 @@
                     <div class="col-12 col-md-8 ps-md-4">
                         <h3 class="white-text-title pb-2 px-3">Progetto in Wordpress</h3>
                         <p class="white-text px-3">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non metus fermentum, cursus
-                            lacus ornare, auctor nunc.
-                            Aliquam purus tortor, luctus et purus id, sollicitudin vehicula magna. Praesent pellentesque
-                            dapibus ipsum ac scelerisque.
-                            Vestibulum non congue neque. Aliquam non lorem ac diam dapibus tincidunt. Proin varius
-                            pharetra tellus, vitae dapibus nisi sollicitudin in.
+                            SAM è un progetto realizzato in WordPress per la promozione della lampada solare
+                            Sammanlänkad di IKEA. Il sito, sviluppato a partire dal tema “Inspiro” e personalizzato
+                            tramite child theme, comprende sei pagine e un’offerta dedicata al prodotto. Ho curato in
+                            particolare la parte di sviluppo e personalizzazione del tema tramite CSS, PHP e plugin.
                         </p>
                     </div>
 
@@ -400,7 +395,7 @@
 
                     <!-- Immagine -->
                     <div class="col-12 col-md-4 d-flex justify-content-center mb-3 mb-md-0">
-                        <img src="/img/miniatura_CVeDI_special.svg" alt="miniatura progetto" class="img-fluid">
+                        <img src="/img/miniatura_volantino_special.svg" alt="miniatura progetto" class="img-fluid">
                     </div>
 
                     <!-- Testo -->
@@ -521,6 +516,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script>
         let lightBlueButton = document.getElementsByClassName("light-blue-btn");
+        let miniaturaSAM = document.getElementById("miniatura_sam");
+
+        miniaturaSAM.addEventListener("click", function () {
+            window.location.href = "sam.html";
+        });
 
         document.addEventListener('DOMContentLoaded', function () {
             new Splide('#image-text-slider', {

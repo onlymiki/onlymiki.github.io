@@ -75,12 +75,12 @@ a:hover {
     color: var(--color-blue);
     font-family: "Hachi Maru Pop", cursive;
 
-    width: 220px;
-    height: 70px;
+    width: 100px;
+    height: 50px;
     border: none;
     cursor: pointer;
     transition: 0.3s ease;
-    clip-path: path("M110 0 Q140 25 210 35 Q140 45 110 70 Q80 45 10 35 Q80 25 110 0 Z");
+    clip-path: polygon(100% 0%, 85% 0%, 50% 35%, 15% 0%, 0% 0%, 50% 50%);
 }
 
 .light-blue-btn:hover {
@@ -89,11 +89,27 @@ a:hover {
     transform: scale(1.05);
 }
 
+/* ----- Arrows carusel ------ */
+.splide__arrow svg {
+    fill: var(--color-black) !important;
+}
+
+.splide__arrow {
+    background: var(--color-white) !important;
+}
+
+.splide__slide {
+    cursor: pointer;
+}
 
 
 /* ----- Img ----- */
-.img-portrait {
+.img-home {
     max-height: 300px;
+}
+
+.img-portrait {
+    max-height: 350px;
 }
 
 /* ----- Decoration ----- */
@@ -103,6 +119,14 @@ a:hover {
 
 .diamond {
     background-color: var(--color-blue);
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+
+}
+
+.diamond-light {
+    background-color: var(--color-light-blue);
     width: 100px;
     height: 100px;
     transform: rotate(45deg);
@@ -153,6 +177,14 @@ a:hover {
 .rotate-45 {
     transform: rotate(45deg);
 }
+
+.chevron-section {
+    background-color: #dce9fb;
+    height: 200px;
+    /*clip-path: polygon(0% 1%, 0% 72%, 48% 100%, 99% 71%, 99% 0%, 50% 23%);*/
+    clip-path: polygon(0% 0%, 0% 70%, 50% 100%, 100% 70%, 100% 0%, 50% 25%);
+}
+
 
 /* ----- Header ------ */
 .header {
@@ -233,6 +265,7 @@ a:hover {
     }
 }
 
+
 @media (min-width: 1400px) {
     .diamond2 {
         top: 360px;
@@ -244,5 +277,9 @@ a:hover {
 
     .star1 {
         top: 1320px;
+    }
+
+    .img-portrait {
+        max-height: 450px;
     }
 }

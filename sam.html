@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Zain:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+</head>
+
+<body class="bg-blue">
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-md px-md-4 p-0 header">
+        <!-- Logo -->
+        <a class="navbar-brand ps-4" href="#">
+            <img src="icons/logo.svg" alt="logo" style="height: 40px;">
+        </a>
+
+        <!-- Bottone hamburger -->
+        <button class="border-0 navbar-toggler pe-4 py-4 custom-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+            <img src="icons/hamburgerMenu.svg" alt="menu" style="width: 30px; height: 30px;">
+        </button>
+
+        <!-- Link -->
+        <div class="collapse navbar-collapse py-md-4" id="navbarNav">
+            <ul
+                class="align-items-md-center d-flex gap-md-5 justify-content-evenly navbar-nav ms-auto white-text-title">
+                <li class="nav-item ps-4 ps-md-0 pt-3 pt-md-0"><a class="h4 text-decoration-none white-text-title"
+                        href="index.html">Home</a></li>
+                <li class="nav-item ps-4 ps-md-0 pt-3 pt-md-0"><a class="h4 text-decoration-none white-text-title"
+                        href="#">About</a></li>
+                <li class="nav-item ps-4 ps-md-0 py-3 py-md-0"><a class="h4 text-decoration-none white-text-title"
+                        href="#">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sezione presentazione progetto iniziale -->
+    <div class="container my-5 px-5">
+        <div class="align-items-center justify-content-center text-center text-md-start row">
+            <img src="img/miniatura_SAM.svg" class="col-12 col-md-6 img-fluid img-portrait pb-2 pb-md-0">
+            <div class="col-12 col-md-6 display-5 white-text-title">
+                PROGETTO IN WORDPRESS -
+                SAM
+            </div>
+            <!-- Sezione voto -->
+            <div class="d-flex justify-content-md-end justify-content-center mt-5 mt-md-0">
+                <div class="diamond-light rounded-2">
+                    <p class="m-0 pb-1 ps-1 blue-text">voto finale</p>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <h4 class="no-rotate blue-text-title text-center">27.5</h4>
+                        <p class="no-rotate pt-3 blue-text text-center">/30</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Sezione tema, consegna, vincoli -->
+    <div class="container mb-5 px-md-5">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h4 class="white-text-title">Consegna</h4>
+                <p class="white-text mb-0">Realizzare un sito web in WordPress composto da 6 pagine:</p>
+                <ul class="white-text mb-3">
+                    <li>Home</li>
+                    <li>Prodotto</li>
+                    <li>Acquista</li>
+                    <li>Contatti (con form e due punti vendita)</li>
+                    <li>News (con almeno tre news inserite)</li>
+                    <li>Pagina a tema libero</li>
+                </ul>
+
+                <h4 class="white-text-title">Tema</h4>
+                <p class="white-text mb-3">Realizzare un mini-sito gadget che sponsorizzi un particolare prodotto IKEA.
+                </p>
+
+            </div>
+            <div class="col-12 col-md-6">
+                <h4 class="white-text-title">Vincoli</h4>
+                <ul class="white-text">
+                    <li>Il sito dovrà essere realizzato in Wordpress</li>
+                    <li>È possibile utilizzare un template preconfezionato oppure un child-theme customizzato</li>
+                    <li>Il sito dovrà essere funzionante e navigabile</li>
+                    <li>Non è possibile costruire il sito per una collezione IKEA, ma solo per singoli prodotti</li>
+                    <li>Non sono ammesse varianti rispetto al brief di progetto (no pagine aggiuntive, no utilizzo di
+                        altri linguaggi che non siano CSS, HTML, PHP, JS)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Separatore -->
+    <div class="d-flex justify-content-center w-100">
+        <img src="/icons/diamante_stella.svg" class="img-fluid px-3">
+    </div>
+
+    <!-- Sezione immagine in alto - testo in basso -->
+    <div class="container my-5 text-center">
+        <img src="/img/SAM/img_centrale.svg" class="img-fluid px-3 mb-4" alt="Lampada Sammanlänkad">
+
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-12">
+                <p class="white-text">
+                    Io e il mio gruppo abbiamo scelto di sponsorizzare un prodotto della linea
+                    <strong>Sammanlänkad</strong>, una lampada ad energia solare a forma di pianeta.
+                    La scelta è ricaduta su Sammanlänkad soprattutto per via della sua forma particolare
+                    e per il suo essere un prodotto sostenibile. L’offerta principale che abbiamo scelto è:
+                    <em>“per ogni lampada acquistata, avrai in omaggio la versione portatile”.</em>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sezione fasi di sviluppo -->
+    <div class="container my-5">
+        <h4 class="white-text-title">Fasi di sviluppo</h4>
+        <p class="white-text mb-0">Per prima cosa abbiamo realizzato moodboard e user personas, poi siamo passati alla
+            realizzazione dei wireframe, mockup. Per ultimo abbiamo realizzato il sito in WordPress. </p>
+    </div>
+
+    <!-- Sezione immagini -->
+    <div class="align-items-center d-flex flex-column flex-md-row gap-4 justify-content-center  my-4 w-100">
+        <img src="/img/SAM/Moodboard.svg" class="img-fluid px-3" style="max-width: 350px;" alt="Moodboard">
+        <img src="/img/SAM/esempio_pagina.svg" class="img-fluid px-3" style="max-width: 350px;" alt="Esempio pagina">
+    </div>
+
+    <!-- Sezione il mio contributo -->
+    <div class="container my-5">
+        <h4 class="white-text-title">Il mio contributo</h4>
+        <p class="white-text mb-0">Ho partecipato a tutte le fasi del progetto, concentrandomi in particolare sul lavoro
+            con WordPress utilizzando anche diversi plugin. Il tema scelto è stato “Inspiro”, che ho personalizzato in
+            base alle nostre esigenze tramite la creazione di un child theme. Oltre a WordPress, ho quindi utilizzato
+            CSS e PHP per realizzare varie modifiche e ottimizzazioni. Un esempio concreto di personalizzazione è la
+            pagina 404. Graficamente è stata realizzata da un mio collega, io mi sono occupata di trasporla poi su
+            WordPress.</p>
+    </div>
+
+    <!-- Sezione immagine 404 -->
+    <div class="container d-flex justify-content-center mb-5 w-100">
+        <img src="/img/SAM/img_404.svg" class="img-fluid px-3">
+    </div>
+
+    <!-- Separatore -->
+    <div class="d-flex justify-content-center w-100">
+        <img src="/icons/diamante_stella.svg" class="img-fluid px-3">
+    </div>
+
+    <!-- PDF -->
+    <div class="container my-5">
+        <div class="align-items-center d-flex justify-content-center row">
+            <div class="col-12 col-md-6">
+                <h4 class="white-text-title">Documentazione</h4>
+                <p class="white-text mb-0">Per saperne di più, <strong>sfoglia la documentazione</strong>, al suo
+                    interno troverai: </p>
+                <ul class="white-text">
+                    <li>Introduzione</li>
+                    <li>Spiegazione sulla scelta di font, colori e logo</li>
+                    <li>Spiegazione sulla scelta del tema</li>
+                    <li>Plugin utilizzati</li>
+                    <li>Riassunto delle modifiche fatte al child-theme</li>
+                    <li>Strumenti utilizzati</li>
+                    <li>Sviluppi futuri</li>
+                </ul>
+                <a href="img/SAM/Documentazione_SAM.pdf" target="_blank"
+                    class="white-text-title h5 text-decoration-none">Cliccla qui per aprire il PDF</a>
+            </div>
+            <div class="align-items-center col-md-6 d-none d-md-flex justify-content-center">
+                <img src="/img/SAM/lampada.svg" class="img-fluid img-portrait">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Sezione torna alla home -->
+    <div class="container d-flex justify-content-center my-5 pt-5">
+        <div class="d-flex justify-content-center justify-content-sm-start">
+            <img src="icons/white_star.svg" class="pe-3">
+            <a href="index.html" class="h4 white-text-title text-decoration-none">Torna alla Home</a>
+            <img src="icons/white_star.svg" class="ps-3">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="m-0 p-5 row w-100 white-text-title footer">
+            <!-- Link -->
+            <div class="align-items-center col-12 col-sm-8 d-flex justify-content-center justify-content-sm-start">
+                <ul class="list-unstyled text-center text-sm-start">
+                    <li class="pb-3"><a href="#" class="h4 text-decoration-none">Home</a></li>
+                    <li class="pb-3"><a href="#" class="h4 text-decoration-none">About Me</a></li>
+                    <li class="pb-3"><a href="#" class="h4 text-decoration-none">Projects</a></li>
+                </ul>
+            </div>
+
+            <!-- Social -->
+            <div
+                class="align-items-center col-12 col-sm-4 d-flex justify-content-center justify-content-sm-start text-center text-sm-start socialCol">
+                <div class="d-block row">
+                    <div class="align-items-center col d-flex gap-3 justify-content-center pb-3">
+                        <a href="#" class="social-link" data-hover="instagramHover.png">
+                            <img src="icons/instagram.svg" class="iconFooter" alt="Instagram">
+                        </a>
+                        <a href="#" class="mb-0 text-decoration-none white-text-title">only.miki</a>
+                    </div>
+
+                    <div class="align-items-center col d-flex gap-3 justify-content-center pb-3">
+                        <a href="#" class="social-link" data-hover="linkedinHover.png">
+                            <img src="icons/linkedin.svg" class="iconFooter" alt="LinkedIn">
+                        </a>
+                        <a href="#" class="mb-0 text-decoration-none white-text-title">only.miki</a>
+                    </div>
+
+                    <div class="align-items-center col d-flex gap-3 justify-content-center pb-3">
+                        <a href="#" class="social-link" data-hover="gitHover.png">
+                            <img src="icons/github.svg" class="iconFooter" alt="GitHub">
+                        </a>
+                        <a href="#" class="mb-0 text-decoration-none white-text-title">only.miki</a>
+                    </div>
+                </div>
+            </div>
+
+            <h6 class="col-12 pt-4 text-center">Riga della privacy</h6>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+
+
+
+    </script>
+
+</body>
+
+</html>
