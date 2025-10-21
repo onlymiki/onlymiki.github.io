@@ -35,9 +35,9 @@
                 <li class="nav-item ps-4 ps-md-0 pt-3 pt-md-0"><a
                         class="active h4 text-decoration-none white-text-title" href="index.html">Home</a></li>
                 <li class="nav-item ps-4 ps-md-0 pt-3 pt-md-0"><a class="h4 text-decoration-none white-text-title"
-                        href="#">About</a></li>
+                        href="#aboutme">About</a></li>
                 <li class="nav-item ps-4 ps-md-0 py-3 py-md-0"><a class="h4 text-decoration-none white-text-title"
-                        href="#">Projects</a></li>
+                        href="#image-text-slider">Projects</a></li>
             </ul>
         </div>
     </nav>
@@ -74,7 +74,7 @@
 
     <!-- About -->
     <!-- Sezione education -->
-    <div class="light-blue-background position-relative pb-5">
+    <div id="aboutme" class="light-blue-background position-relative pb-5">
         <div class="container mt-5 text-center text-md-start position-relative">
             <h4 class="blue-text-title py-4">About Me</h4>
 
@@ -270,7 +270,7 @@
                 </li>
 
                 <!-- Ergonomia -->
-                <li
+                <li id="miniatura_ergonomia"
                     class="splide__slide d-flex flex-md-row flex-column align-items-center text-center text-md-start px-3">
 
                     <!-- Immagine -->
@@ -280,14 +280,15 @@
 
                     <!-- Testo -->
                     <div class="col-12 col-md-8 ps-md-4">
-                        <h3 class="white-text-title pb-2 px-3">Analisi Longitudinale</h3>
+                        <h3 class="white-text-title pb-2 px-3">Progetto ergonomia cognitiva</h3>
                         <p class="white-text px-3">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non metus fermentum, cursus
-                            lacus ornare, auctor nunc.
-                            Aliquam purus tortor, luctus et purus id, sollicitudin vehicula magna. Praesent pellentesque
-                            dapibus ipsum ac scelerisque.
-                            Vestibulum non congue neque. Aliquam non lorem ac diam dapibus tincidunt. Proin varius
-                            pharetra tellus, vitae dapibus nisi sollicitudin in.
+                            Ergonomia Cognitiva è un corso universitario dedicato all’analisi e alla progettazione di
+                            interfacce secondo i principi dell’HCI.
+                            In gruppo abbiamo ideato Peachy, un prototipo di applicazione per la cura della pelle,
+                            realizzato con Figma e sviluppato seguendo tutte le fasi del processo ergonomico, dal
+                            needfinding alla valutazione. Mi sono occupata principalmente della fase di needfinding e
+                            del testing, contribuendo anche
+                            alla progettazione e all’analisi dei risultati.
                         </p>
                     </div>
 
@@ -473,9 +474,9 @@
             <!-- Link -->
             <div class="align-items-center col-12 col-sm-8 d-flex justify-content-center justify-content-sm-start">
                 <ul class="list-unstyled text-center text-sm-start">
-                    <li class="pb-3"><a href="#" class="h4 text-decoration-none active">Home</a></li>
-                    <li class="pb-3"><a href="#" class="h4 text-decoration-none">About Me</a></li>
-                    <li class="pb-3"><a href="#" class="h4 text-decoration-none">Projects</a></li>
+                    <li class="pb-3"><a href="index.html" class="h4 text-decoration-none active">Home</a></li>
+                    <li class="pb-3"><a href="#aboutme" class="h4 text-decoration-none">About Me</a></li>
+                    <li class="pb-3"><a href="#image-text-slider" class="h4 text-decoration-none">Projects</a></li>
                 </ul>
             </div>
 
@@ -515,12 +516,35 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script>
+        // Classe active
+        const allLinks = document.querySelectorAll('.navbar-nav a, footer a');
+
+        allLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                const target = this.getAttribute('href');
+                if (target.startsWith('#')) {
+                    e.preventDefault();
+                    document.querySelector(target)?.scrollIntoView({ behavior: 'smooth' });
+                }
+                allLinks.forEach(l => l.classList.remove('active'));
+                document.querySelectorAll(`a[href="${target}"]`).forEach(l => {
+                    l.classList.add('active');
+                });
+            });
+        });
+
+        // Slider
         let lightBlueButton = document.getElementsByClassName("light-blue-btn");
         let miniaturaSAM = document.getElementById("miniatura_sam");
+        let miniaturaErgonomia = document.getElementById("miniatura_ergonomia");
 
         miniaturaSAM.addEventListener("click", function () {
             window.location.href = "sam.html";
         });
+
+        miniaturaErgonomia.addEventListener("click", function () {
+            window.location.href = "ergonomia.html";
+        })
 
         document.addEventListener('DOMContentLoaded', function () {
             new Splide('#image-text-slider', {
