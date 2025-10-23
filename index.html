@@ -319,7 +319,7 @@
                 </li>
 
                 <!-- Realtà virtuale -->
-                <li
+                <li id="miniatura_vr"
                     class="splide__slide d-flex flex-md-row flex-column align-items-center text-center text-md-start px-3">
 
                     <!-- Immagine -->
@@ -331,12 +331,14 @@
                     <div class="col-12 col-md-8 ps-md-4">
                         <h3 class="white-text-title pb-2 px-3">Progetto Unity</h3>
                         <p class="white-text px-3">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non metus fermentum, cursus
-                            lacus ornare, auctor nunc.
-                            Aliquam purus tortor, luctus et purus id, sollicitudin vehicula magna. Praesent pellentesque
-                            dapibus ipsum ac scelerisque.
-                            Vestibulum non congue neque. Aliquam non lorem ac diam dapibus tincidunt. Proin varius
-                            pharetra tellus, vitae dapibus nisi sollicitudin in.
+                            In gruppo, abbiamo sviluppato un'esperienza ambientata nello spazio che si
+                            articola in tre scene: l'esplorazione di un pianeta, lo svolgimento di una simulazione
+                            all'interno della navicella, e l'esecuzione del decollo. Il progetto è stato realizzato con
+                            Unity e sviluppato per essere testabile su PC. Mi sono concentrata
+                            sulla realizzazione della Scena di Simulazione, curando l'interazione con l'astronauta,
+                            l'implementazione del meccanismo di gioco con pulsanti per avviare e terminare la
+                            simulazione, la distruzione dei meteoriti tramite pistola laser e l'attivazione del
+                            teletrasporto per la scena successiva.
                         </p>
                     </div>
 
@@ -538,6 +540,7 @@
         let miniaturaSAM = document.getElementById("miniatura_sam");
         let miniaturaErgonomia = document.getElementById("miniatura_ergonomia");
         let miniaturaSistemi = document.getElementById("miniatura_sistemi_informativi");
+        let miniaturaVR = document.getElementById("miniatura_vr");
 
         miniaturaSAM.addEventListener("click", function () {
             window.location.href = "sam.html";
@@ -545,11 +548,17 @@
 
         miniaturaErgonomia.addEventListener("click", function () {
             window.location.href = "ergonomia.html";
-        })
+        });
 
         miniaturaSistemi.addEventListener("click", function () {
             window.location.href = "sistemi.html";
-        })
+        });
+
+        miniaturaVR.addEventListener("click", function () {
+            window.location.href = "vr.html";
+        });
+
+       
 
         document.addEventListener('DOMContentLoaded', function () {
             new Splide('#image-text-slider', {

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Realtà virtuale</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Zain:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+</head>
+
+<body class="bg-blue">
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-md px-md-4 p-0 header">
+        <!-- Logo -->
+        <a class="navbar-brand ps-4" href="#">
+            <img src="icons/logo.svg" alt="logo" style="height: 40px;">
+        </a>
+
+        <!-- Bottone hamburger -->
+        <button class="border-0 navbar-toggler pe-4 py-4 custom-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+            <img src="icons/hamburgerMenu.svg" alt="menu" style="width: 30px; height: 30px;">
+        </button>
+
+        <!-- Link -->
+        <div class="collapse navbar-collapse py-md-4" id="navbarNav">
+            <ul
+                class="align-items-md-center d-flex gap-md-5 justify-content-evenly navbar-nav ms-auto white-text-title">
+                <li class="nav-item ps-4 ps-md-0 pt-3 pt-md-0"><a class="h4 text-decoration-none white-text-title"
+                        href="index.html">Home</a></li>
+                <li class="nav-item ps-4 ps-md-0 pt-3 pt-md-0"><a class="h4 text-decoration-none white-text-title"
+                        href="#">About</a></li>
+                <li class="nav-item ps-4 ps-md-0 py-3 py-md-0"><a class="h4 text-decoration-none white-text-title"
+                        href="#">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sezione presentazione progetto iniziale -->
+    <div class="container my-5 px-5">
+        <div class="align-items-center justify-content-center text-center text-md-start row">
+            <img src="img/miniatura_VR.svg" class="col-12 col-md-6 img-fluid img-portrait pb-2 pb-md-0">
+            <div class="col-12 col-md-6 display-5 white-text-title">
+                PROGETTO REALTÀ VIRTUALE
+            </div>
+            <!-- Sezione voto -->
+            <div class="d-flex justify-content-md-end justify-content-center mt-5 mt-md-0">
+                <div class="diamond-light rounded-2">
+                    <p class="m-0 pb-1 ps-1 blue-text">voto finale</p>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <h4 class="no-rotate blue-text-title text-center">3</h4>
+                        <p class="no-rotate pt-3 blue-text text-center">/4</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Sezione tema, consegna, vincoli -->
+    <div class="container mb-5 px-md-5">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h4 class="white-text-title">Consegna</h4>
+                <p class="white-text mb-0">Realizzare e documentare, tramite il motore Unity, un'applicazione di Realtà
+                    Virtuale (gioco, simulazione, training, ecc.) che sia sensata e realistica. L'applicazione deve
+                    dimostrare padronanza delle interazioni VR, includendo elementi essenziali come la manipolazione di
+                    oggetti, l'uso di animazioni, la fisica e la navigazione dell'utente all'interno dell'ambiente 3D. È
+                    fondamentale fornire istruzioni chiare e una documentazione completa.
+                </p>
+                <h4 class="white-text-title">Tema</h4>
+                <p class="white-text mb-3">Una qualsiasi applicazione in Realtà Virtuale
+
+
+            </div>
+            <div class="col-12 col-md-6">
+                <h4 class="white-text-title">Vincoli</h4>
+                <p class="white-text mb-0">La relazione deve contenere:</p>
+                <ul class="white-text">
+                    <li>Gruppo: 2 o massimo 3 persone</li>
+                    <li>Compatibilità: Deve funzionare su Oculus Meta Quest 2 e anche con Mouse e Tastiera.</li>
+                    <li>Implementazione Tecnica: Ogni membro del gruppo deve creare almeno una scena che includa:
+                        interazioni
+                        tramite mani/raycast, un socket, GUI, un sistema di movimento (incluso il teletrasporto in
+                        almeno una
+                        scena), audio/luci, fisica e animazioni gestite da un animator.</li>
+                    <li>Materiali: Utilizzo permesso (e da documentare) di asset 3D gratuiti.</li>
+                    <li>Documentazione: Necessaria per descrivere l'app, le scene, le interazioni e gli asset
+                        utilizzati.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Separatore -->
+    <div class="d-flex justify-content-center w-100">
+        <img src="/icons/diamante_stella.svg" class="img-fluid px-3">
+    </div>
+
+    <!-- Sezione immagine in alto - testo in basso -->
+    <div class="container my-5 text-center">
+        <img src="/img/VR/immagine_centrale.png" class="img-fluid px-3 mb-4" alt="progetto_vr">
+
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-12">
+                <p class="white-text">
+                    Io e il mio gruppo abbiamo scelto come progetto di Realtà Virtuale l'esplorazione e il lancio
+                    spaziale. In particolare, abbiamo sviluppato un'applicazione VR il cui scopo è offrire all'utente
+                    l'esperienza di un paesaggio spaziale, accompagnato da piccole sfide logiche necessarie per
+                    progredire e far partire la navicella. Il progetto si sviluppa in tre scene distinte, per la
+                    realizzazione, abbiamo suddiviso il lavoro facendone una a testa e abbiamo utilizzato un
+                    repository su GitHub per la gestione del progetto.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sezione fasi di sviluppo -->
+    <div class="container my-5">
+        <h4 class="white-text-title">Fasi di sviluppo</h4>
+        <p class="white-text mb-0">Dopo una sessione di brainstorming per scegliere il tema del progetto, abbiamo scelto
+            di realizzare una applicazione VR a tema spazio, composta da tre scene distinte:
+        </p>
+        <ol class="white-text">
+            <li>Pianeta: L'utente deve risolvere un enigma per raggiungere la navicella spaziale.</li>
+            <li>Interno Navicella (Simulazione): L'utente deve completare una simulazione per prepararsi al lancio e
+                sbloccare la scena successiva.</li>
+            <li>Interno Navicella (Lancio): L'utente deve compiere le azioni necessarie per far partire la navicella,
+                completando così il gioco.</li>
+        </ol>
+    </div>
+
+    <!-- Sezione immagini -->
+    <div class="container my-5 text-center">
+        <img src="/img/VR/immagine_navicella.png" class="img-fluid px-3 mb-4" alt="progetto_vr">
+    </div>
+
+    <!-- Sezione il mio contributo -->
+    <div class="container my-5">
+        <h4 class="white-text-title">Il mio contributo</h4>
+        <p class="white-text mb-0">Ho partecipato a tutte le fasi del progetto, concentrandomi sulla realizzazione della
+            Scena di Simulazione. Ho curato l'ambientazione e implementato tutte le interazioni chiave: la gestione
+            delle animazioni dell'Astronauta e delle relative finestre di dialogo (GUI), la programmazione del
+            meccanismo di simulazione (attivazione dei pulsanti, visualizzazione del video e distruzione dei meteoriti
+            con script LaserGun adattato), e infine l'attivazione del Teleport speciale per il passaggio alla scena
+            successiva tramite lo script Visibility Controller.</p>
+    </div>
+
+    <!-- Sezione immagine 404 -->
+    <div class="container d-flex flex-column justify-content-center mb-5 w-100">
+        <video controls class="img-fluid px-5" alt="Video della Stanza di Simulazione: interfaccia di controllo">
+            <source src="/img/VR/stanza_simulazione.mp4" type="video/mp4">
+            Il tuo browser non supporta la riproduzione del video.
+        </video>
+    </div>
+
+    <!-- Separatore -->
+    <div class="d-flex justify-content-center w-100">
+        <img src="/icons/diamante_stella.svg" class="img-fluid px-3">
+    </div>
+
+    <!-- PDF -->
+    <div class="container my-5">
+        <div class="align-items-center d-flex justify-content-center row">
+            <div class="col-12 col-md-6">
+                <h4 class="white-text-title">Documentazione</h4>
+                <p class="white-text mb-0">Per saperne di più, <strong>sfoglia la documentazione</strong>, al suo
+                    interno troverai: </p>
+                <ul class="white-text">
+                    <li>Spiegazione progetto</li>
+                    <li>Comandi base</li>
+                    <li>Scena iniziale / Scena Simulazione / Scena Navicella</li>
+                    <li>Packages installati / Versione del progetto</li>
+                    <li>Valutazione</li>
+                    <li>Sviluppi futuri</li>
+                </ul>
+                <a href="img/VR/Relazione_progetto.pdf" target="_blank"
+                    class="white-text-title h5 text-decoration-none">Clicca qui per aprire il PDF</a>
+            </div>
+            <div class="align-items-center col-md-6 d-none d-md-flex justify-content-center">
+                <img src="/img/VR/immagine_laterale.svg" class="img-fluid img-portrait" alt="progetto vr">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Sezione torna alla home -->
+    <div class="container d-flex justify-content-center my-5 pt-5">
+        <div class="d-flex justify-content-center justify-content-sm-start">
+            <img src="icons/white_star.svg" class="pe-3">
+            <a href="index.html" class="h4 white-text-title text-decoration-none">Torna alla Home</a>
+            <img src="icons/white_star.svg" class="ps-3">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="m-0 p-5 row w-100 white-text-title footer">
+            <!-- Link -->
+            <div class="align-items-center col-12 col-sm-8 d-flex justify-content-center justify-content-sm-start">
+                <ul class="list-unstyled text-center text-sm-start">
+                    <li class="pb-3"><a href="#" class="h4 text-decoration-none">Home</a></li>
+                    <li class="pb-3"><a href="#" class="h4 text-decoration-none">About Me</a></li>
+                    <li class="pb-3"><a href="#" class="h4 text-decoration-none">Projects</a></li>
+                </ul>
+            </div>
+
+            <!-- Social -->
+            <div
+                class="align-items-center col-12 col-sm-4 d-flex justify-content-center justify-content-sm-start text-center text-sm-start socialCol">
+                <div class="d-block row">
+                    <div class="align-items-center col d-flex gap-3 justify-content-center pb-3">
+                        <a href="#" class="social-link" data-hover="instagramHover.png">
+                            <img src="icons/instagram.svg" class="iconFooter" alt="Instagram">
+                        </a>
+                        <a href="#" class="mb-0 text-decoration-none white-text-title">only.miki</a>
+                    </div>
+
+                    <div class="align-items-center col d-flex gap-3 justify-content-center pb-3">
+                        <a href="#" class="social-link" data-hover="linkedinHover.png">
+                            <img src="icons/linkedin.svg" class="iconFooter" alt="LinkedIn">
+                        </a>
+                        <a href="#" class="mb-0 text-decoration-none white-text-title">only.miki</a>
+                    </div>
+
+                    <div class="align-items-center col d-flex gap-3 justify-content-center pb-3">
+                        <a href="#" class="social-link" data-hover="gitHover.png">
+                            <img src="icons/github.svg" class="iconFooter" alt="GitHub">
+                        </a>
+                        <a href="#" class="mb-0 text-decoration-none white-text-title">only.miki</a>
+                    </div>
+                </div>
+            </div>
+
+            <h6 class="col-12 pt-4 text-center">Riga della privacy</h6>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+
+
+
+    </script>
+
+</body>
+
+</html>
