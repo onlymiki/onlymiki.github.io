@@ -295,7 +295,7 @@
                 </li>
 
                 <!-- Sistemi informativi -->
-                <li
+                <li id="miniatura_sistemi_informativi"
                     class="splide__slide d-flex flex-md-row flex-column align-items-center text-center text-md-start px-3">
 
                     <!-- Immagine -->
@@ -307,12 +307,12 @@
                     <div class="col-12 col-md-8 ps-md-4">
                         <h3 class="white-text-title pb-2 px-3">Modellazione di un processo <br> aziendale</h3>
                         <p class="white-text px-3">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non metus fermentum, cursus
-                            lacus ornare, auctor nunc.
-                            Aliquam purus tortor, luctus et purus id, sollicitudin vehicula magna. Praesent pellentesque
-                            dapibus ipsum ac scelerisque.
-                            Vestibulum non congue neque. Aliquam non lorem ac diam dapibus tincidunt. Proin varius
-                            pharetra tellus, vitae dapibus nisi sollicitudin in.
+                            Questo progetto è dedicato alla modellazione di un processo aziendale.
+                            In gruppo, abbiamo analizzato e rappresentato le attività della pizzeria “La Cometa”
+                            utilizzando le notazioni standard di Business Process Management (BPMN, CMMN, DMN e IFML).
+                            Mi sono occupata in particolare della modellazione dei processi e dell’interfaccia utente,
+                            contribuendo anche alla definizione degli Use Cases e alla stesura della documentazione
+                            finale.
                         </p>
                     </div>
 
@@ -420,7 +420,7 @@
 
                     <!-- Immagine -->
                     <div class="col-12 col-md-4 d-flex justify-content-center mb-3 mb-md-0">
-                        <img src="/img/miniatura_CVeDI_special.svg" alt="miniatura progetto" class="img-fluid">
+                        <img src="/img/miniatura_mbRunners_special.svg" alt="miniatura progetto" class="img-fluid">
                     </div>
 
                     <!-- Testo -->
@@ -537,6 +537,7 @@
         let lightBlueButton = document.getElementsByClassName("light-blue-btn");
         let miniaturaSAM = document.getElementById("miniatura_sam");
         let miniaturaErgonomia = document.getElementById("miniatura_ergonomia");
+        let miniaturaSistemi = document.getElementById("miniatura_sistemi_informativi");
 
         miniaturaSAM.addEventListener("click", function () {
             window.location.href = "sam.html";
@@ -544,6 +545,10 @@
 
         miniaturaErgonomia.addEventListener("click", function () {
             window.location.href = "ergonomia.html";
+        })
+
+        miniaturaSistemi.addEventListener("click", function () {
+            window.location.href = "sistemi.html";
         })
 
         document.addEventListener('DOMContentLoaded', function () {
