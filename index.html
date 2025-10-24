@@ -345,7 +345,7 @@
                 </li>
 
                 <!-- Web App -->
-                <li
+                <li id="miniatura_web_app"
                     class="splide__slide d-flex flex-md-row flex-column align-items-center text-center text-md-start px-3">
 
                     <!-- Immagine -->
@@ -357,12 +357,10 @@
                     <div class="col-12 col-md-8 ps-md-4">
                         <h3 class="white-text-title pb-2 px-3">Progetto React</h3>
                         <p class="white-text px-3">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non metus fermentum, cursus
-                            lacus ornare, auctor nunc.
-                            Aliquam purus tortor, luctus et purus id, sollicitudin vehicula magna. Praesent pellentesque
-                            dapibus ipsum ac scelerisque.
-                            Vestibulum non congue neque. Aliquam non lorem ac diam dapibus tincidunt. Proin varius
-                            pharetra tellus, vitae dapibus nisi sollicitudin in.
+                            Io e il mio collega abbiamo sviluppato una Web App per la visualizzazione di cocktail che sfrutta
+                            l'API The CocktailDB. Il progetto è stato realizzato con l'IDE WebStorm e sviluppato
+                            utilizzando React e react-router-dom per la gestione del routing. Il layout è stato
+                            personalizzato graficamente con Bootstrap e Reactstrap.
                         </p>
                     </div>
 
@@ -541,6 +539,7 @@
         let miniaturaErgonomia = document.getElementById("miniatura_ergonomia");
         let miniaturaSistemi = document.getElementById("miniatura_sistemi_informativi");
         let miniaturaVR = document.getElementById("miniatura_vr");
+        let miniaturaWebApp = document.getElementById("miniatura_web_app");
 
         miniaturaSAM.addEventListener("click", function () {
             window.location.href = "sam.html";
@@ -558,8 +557,12 @@
             window.location.href = "vr.html";
         });
 
-       
+        miniaturaWebApp.addEventListener("click", function () {
+            window.location.href = "webApp.html";
+        });
 
+        
+        //Carosello
         document.addEventListener('DOMContentLoaded', function () {
             new Splide('#image-text-slider', {
                 type: 'loop',
