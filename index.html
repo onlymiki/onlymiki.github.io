@@ -357,7 +357,8 @@
                     <div class="col-12 col-md-8 ps-md-4">
                         <h3 class="white-text-title pb-2 px-3">Progetto React</h3>
                         <p class="white-text px-3">
-                            Io e il mio collega abbiamo sviluppato una Web App per la visualizzazione di cocktail che sfrutta
+                            Io e il mio collega abbiamo sviluppato una Web App per la visualizzazione di cocktail che
+                            sfrutta
                             l'API The CocktailDB. Il progetto è stato realizzato con l'IDE WebStorm e sviluppato
                             utilizzando React e react-router-dom per la gestione del routing. Il layout è stato
                             personalizzato graficamente con Bootstrap e Reactstrap.
@@ -367,7 +368,7 @@
                 </li>
 
                 <!-- CVeDI -->
-                <li
+                <li id="miniatura_CVeDI"
                     class="splide__slide d-flex flex-md-row flex-column align-items-center text-center text-md-start px-3">
 
                     <!-- Immagine -->
@@ -379,12 +380,12 @@
                     <div class="col-12 col-md-8 ps-md-4">
                         <h3 class="white-text-title pb-2 px-3">Progetto HTML, CSS, JS <br> e Bootstrap</h3>
                         <p class="white-text px-3">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non metus fermentum, cursus
-                            lacus ornare, auctor nunc.
-                            Aliquam purus tortor, luctus et purus id, sollicitudin vehicula magna. Praesent pellentesque
-                            dapibus ipsum ac scelerisque.
-                            Vestibulum non congue neque. Aliquam non lorem ac diam dapibus tincidunt. Proin varius
-                            pharetra tellus, vitae dapibus nisi sollicitudin in.
+                            Io e il mio gruppo abbiamo realizzato un progetto per il corso di Comunicazione Visiva e
+                            Design delle Interfacce (CVeDI), che prevedeva la progettazione e lo sviluppo di
+                            un’interfaccia per totem informativi destinati ai turisti su Terra C-137, un pianeta
+                            parallelo alla Terra.
+                            Il lavoro è stato sviluppato in HTML, CSS, Bootstrap e JavaScript, seguendo un approccio
+                            human-centered e corredato da analisi, ricerca e design system.
                         </p>
                     </div>
 
@@ -444,7 +445,7 @@
 
                     <!-- Immagine -->
                     <div class="col-12 col-md-4 d-flex justify-content-center mb-3 mb-md-0">
-                        <img src="/img/miniatura_CVeDI_special.svg" alt="miniatura progetto" class="img-fluid">
+                        <img src="/img/miniatura_tesi_special.png" alt="miniatura progetto" class="img-fluid">
                     </div>
 
                     <!-- Testo -->
@@ -540,6 +541,7 @@
         let miniaturaSistemi = document.getElementById("miniatura_sistemi_informativi");
         let miniaturaVR = document.getElementById("miniatura_vr");
         let miniaturaWebApp = document.getElementById("miniatura_web_app");
+        let miniaturaCVeDI = document.getElementById("miniatura_CVeDI");
 
         miniaturaSAM.addEventListener("click", function () {
             window.location.href = "sam.html";
@@ -561,7 +563,11 @@
             window.location.href = "webApp.html";
         });
 
-        
+        miniaturaCVeDI.addEventListener("click", function () {
+            window.location.href = "cvedi.html";
+        });
+
+
         //Carosello
         document.addEventListener('DOMContentLoaded', function () {
             new Splide('#image-text-slider', {
