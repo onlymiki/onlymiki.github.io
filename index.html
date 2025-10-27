@@ -392,7 +392,7 @@
                 </li>
 
                 <!-- Volantino pizzeria -->
-                <li
+                <li id="volantino"
                     class="splide__slide d-flex flex-md-row flex-column align-items-center text-center text-md-start px-3">
 
                     <!-- Immagine -->
@@ -404,19 +404,16 @@
                     <div class="col-12 col-md-8 ps-md-4">
                         <h3 class="white-text-title pb-2 px-3">Volantino pizzeria con Figma</h3>
                         <p class="white-text px-3">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non metus fermentum, cursus
-                            lacus ornare, auctor nunc.
-                            Aliquam purus tortor, luctus et purus id, sollicitudin vehicula magna. Praesent pellentesque
-                            dapibus ipsum ac scelerisque.
-                            Vestibulum non congue neque. Aliquam non lorem ac diam dapibus tincidunt. Proin varius
-                            pharetra tellus, vitae dapibus nisi sollicitudin in.
+                            Commissione: Realizzare un volantino simile a quello di partenza, ma con grafica iniziale
+                            rinnovata. <br>
+                            Principali strumenti utilizzati: Figma, Canva.
                         </p>
                     </div>
 
                 </li>
 
                 <!-- MB Runners -->
-                <li
+                <li id="miniatura_mbRunners"
                     class="splide__slide d-flex flex-md-row flex-column align-items-center text-center text-md-start px-3">
 
                     <!-- Immagine -->
@@ -427,14 +424,13 @@
                     <!-- Testo -->
                     <div class="col-12 col-md-8 ps-md-4">
                         <h3 class="white-text-title pb-2 px-3">MB Runners sito con HTML, <br>CSS, JS e Boostrap</h3>
-                        <p class="white-text px-3">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non metus fermentum, cursus
-                            lacus ornare, auctor nunc.
-                            Aliquam purus tortor, luctus et purus id, sollicitudin vehicula magna. Praesent pellentesque
-                            dapibus ipsum ac scelerisque.
-                            Vestibulum non congue neque. Aliquam non lorem ac diam dapibus tincidunt. Proin varius
-                            pharetra tellus, vitae dapibus nisi sollicitudin in.
-                        </p>
+                        <p class="white-text px-3 mb-0">
+                            Commissione: Realizzare un sito web per il club di corsa MB Runners di Monza. Il sito deve
+                            contenere: Homepage, regolamento e form per entrare a far parte del club, calendario con
+                            eventi, lista degli sponsor e collaborazioni. <br> Inoltre il sito dovrà essere responsive e
+                            facile da gestire per chi non ha
+                            familiarità con la
+                            programmazione.</p>
                     </div>
 
                 </li>
@@ -542,6 +538,8 @@
         let miniaturaVR = document.getElementById("miniatura_vr");
         let miniaturaWebApp = document.getElementById("miniatura_web_app");
         let miniaturaCVeDI = document.getElementById("miniatura_CVeDI");
+        let volantino = document.getElementById("volantino");
+        let miniaturaMBRunners = document.getElementById("miniatura_mbRunners");
 
         miniaturaSAM.addEventListener("click", function () {
             window.location.href = "sam.html";
@@ -565,6 +563,14 @@
 
         miniaturaCVeDI.addEventListener("click", function () {
             window.location.href = "cvedi.html";
+        });
+
+        volantino.addEventListener("click", function () {
+            window.location.href = "volantino.html";
+        });
+
+        miniaturaMBRunners.addEventListener("click", function () {
+            window.location.href = "mbRunners.html";
         });
 
 
