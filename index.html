@@ -436,7 +436,7 @@
                 </li>
 
                 <!-- Progetto tesi magistrale -->
-                <li
+                <li id="tesi"
                     class="splide__slide d-flex flex-md-row flex-column align-items-center text-center text-md-start px-3">
 
                     <!-- Immagine -->
@@ -448,12 +448,14 @@
                     <div class="col-12 col-md-8 ps-md-4">
                         <h3 class="white-text-title pb-2 px-3">Progetto Unity + JaCaMo </h3>
                         <p class="white-text px-3">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non metus fermentum, cursus
-                            lacus ornare, auctor nunc.
-                            Aliquam purus tortor, luctus et purus id, sollicitudin vehicula magna. Praesent pellentesque
-                            dapibus ipsum ac scelerisque.
-                            Vestibulum non congue neque. Aliquam non lorem ac diam dapibus tincidunt. Proin varius
-                            pharetra tellus, vitae dapibus nisi sollicitudin in.
+                            Ho scelto di svolgere lo stage nel settore della realtà virtuale dopo aver seguito il
+                            corso, che ho trovato particolarmente stimolante. Durante lo stage ho avuto l'opportunità di
+                            migliorare le
+                            mie competenze pratiche nell’uso di Unity, apprendere un nuovo linguaggio di programmazione
+                            (AgentSpeak) e
+                            affinare le mie capacità di analisi della letteratura scientifica. Mentre lo stage, quindi
+                            la parte pratica
+                            e di ricerca, è terminato, la tesi è ancora in corso.
                         </p>
                     </div>
 
@@ -540,6 +542,7 @@
         let miniaturaCVeDI = document.getElementById("miniatura_CVeDI");
         let volantino = document.getElementById("volantino");
         let miniaturaMBRunners = document.getElementById("miniatura_mbRunners");
+        let tesi = document.getElementById("tesi");
 
         miniaturaSAM.addEventListener("click", function () {
             window.location.href = "sam.html";
@@ -573,6 +576,9 @@
             window.location.href = "mbRunners.html";
         });
 
+        tesi.addEventListener("click", function () {
+            window.location.href = "tesi.html";
+        });
 
         //Carosello
         document.addEventListener('DOMContentLoaded', function () {

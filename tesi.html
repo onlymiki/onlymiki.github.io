@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tesi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Zain:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+</head>
+
+<body class="bg-blue">
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-md px-md-4 p-0 header">
+        <!-- Logo -->
+        <a class="navbar-brand ps-4" href="#">
+            <img src="icons/logo.svg" alt="logo" style="height: 40px;">
+        </a>
+
+        <!-- Bottone hamburger -->
+        <button class="border-0 navbar-toggler pe-4 py-4 custom-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+            <img src="icons/hamburgerMenu.svg" alt="menu" style="width: 30px; height: 30px;">
+        </button>
+
+        <!-- Link -->
+        <div class="collapse navbar-collapse py-md-4" id="navbarNav">
+            <ul
+                class="align-items-md-center d-flex gap-md-5 justify-content-evenly navbar-nav ms-auto white-text-title">
+                <li class="nav-item ps-4 ps-md-0 pt-3 pt-md-0"><a class="h4 text-decoration-none white-text-title"
+                        href="index.html">Home</a></li>
+                <li class="nav-item ps-4 ps-md-0 pt-3 pt-md-0"><a class="h4 text-decoration-none white-text-title"
+                        href="#">About</a></li>
+                <li class="nav-item ps-4 ps-md-0 py-3 py-md-0"><a class="h4 text-decoration-none white-text-title"
+                        href="#">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sezione presentazione progetto iniziale -->
+    <div class="container my-5 px-5">
+        <div class="align-items-center justify-content-center text-center text-md-start row">
+            <img src="img/Tesi/miniatura_tesi.svg" class="col-12 col-md-6 img-fluid img-portrait pb-2 pb-md-0">
+            <div class="col-12 col-md-6 display-5 white-text-title">
+                Stage e tesi di laurea magistrale
+            </div>
+        </div>
+    </div>
+
+    <!-- Sezione titolo e descrizione -->
+    <div class="container mb-5 px-md-5">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h4 class="white-text-title">Titolo stage</h4>
+                <p class="white-text mb-0"> Analisi dello stato dell'arte relativo alla creazione di virtual humans
+                    intelligenti per VR, in particolare con focus su realismo nelle animazioni e nello speech Obiettivi
+                    formativi e competenze da acquisire.
+
+                <h4 class="white-text-title pt-3">Caratteristiche generali</h4>
+                <p class="white-text mb-3"> Ambito operativo: sviluppo e sperimentazione di modelli, metodi, strumenti e
+                    tecnologie
+                    dell’Intelligenza Artificiale, incluso la definizione di Sistemi Dinamici Discreti (Automi
+                    Cellulari e Sistemi Multi Agente), e l’ingegneria e rappresentazione della conoscenza.
+                </p>
+
+            </div>
+            <div class="col-12 col-md-6">
+                <h4 class="white-text-title">Attività svolte</h4>
+                <p class="white-text mb-0">Cercare in letteratura tecniche già esistenti atte ad animare un virtual
+                    humans in Unity,
+                    che si possano integrare in un progetto già sviluppato nel gruppo di ricerca. Cercare
+                    sempre in letteratura tools/librerie che permettano al virtual humans di tradurre in
+                    linguaggio parlato, comprensibile da umani, la conoscenza interna dell'agente,
+                    formalizzata in un linguaggio logico. Infine, applicare queste tecniche su uno
+                    specifico progetto creato utilizzando in combinazione Unity e JaCaMo.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Separatore -->
+    <div class="d-flex justify-content-center w-100">
+        <img src="/icons/diamante_stella.svg" class="img-fluid px-3">
+    </div>
+
+    <!-- Sezione fasi di sviluppo -->
+    <div class="container my-5">
+        <h4 class="white-text-title">Motivazioni e stato attuale</h4>
+        <p class="white-text mb-0">Ho scelto di svolgere lo stage nel settore della realtà virtuale dopo aver seguito il
+            corso, che ho trovato particolarmente stimolante. Durante lo stage ho avuto l'opportunità di migliorare le
+            mie competenze pratiche nell’uso di Unity, apprendere un nuovo linguaggio di programmazione (AgentSpeak) e
+            affinare le mie capacità di analisi della letteratura scientifica. Mentre lo stage, quindi la parte pratica
+            e di ricerca, è terminato, la tesi è ancora in corso.</p>
+        </p>
+    </div>
+
+    <!-- Sezione il mio contributo -->
+    <div class="container my-5">
+        <h4 class="white-text-title">Il mio contributo</h4>
+        <p class="white-text mb-0">Il progetto è stato realizzato in collaborazione con una collega, con il prezioso
+            supporto della mia relatrice e di altri collaboratori. Lo stato iniziale prevedeva agenti con
+            il "cervello" in JaCaMo e il "corpo" in Unity, rappresentati in quest’ultimo da semplici capsule e con
+            un modello di comportamento elementare. Ho contribuito attivamente a sostituire le capsule con avatar
+            umanoidi, introducendo elementi come prossemica, f-formation, animazioni ed espressioni facciali, al fine di
+            rendere le interazioni tra agenti più simili a conversazioni umane. Sono intervenuta sia lato Unity
+            scrivendo codice con C# sia lato JaCaMo utilizzando Jason.</p>
+    </div>
+
+    <div class="container mt-4">
+        <h4 class="white-text-title">Agenti prima e dopo</h4>
+    </div>
+    <!-- Sezione immagini -->
+    <div
+        class="align-items-center d-flex flex-column flex-md-row gap-4 gam-md-0 justify-content-center px-5 my-4 w-100">
+        <img src="/img/Tesi/agenti_prima.svg" class="img-fluid px-3 w-50" alt="volantino a5">
+        <img src="/img/Tesi/agenti_dopo.svg" class="img-fluid px-3 w-50" alt="volantino a5">
+    </div>
+
+    <!-- Sezione torna alla home -->
+    <div class="container d-flex justify-content-center mb-5 pt-5">
+
+        <div class="d-flex justify-content-center justify-content-sm-start">
+            <img src="icons/white_star.svg" class="pe-3">
+            <a href="index.html" class="h4 white-text-title text-decoration-none">Torna alla Home</a>
+            <img src="icons/white_star.svg" class="ps-3">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="m-0 p-5 row w-100 white-text-title footer">
+            <!-- Link -->
+            <div class="align-items-center col-12 col-sm-8 d-flex justify-content-center justify-content-sm-start">
+                <ul class="list-unstyled text-center text-sm-start">
+                    <li class="pb-3"><a href="#" class="h4 text-decoration-none">Home</a></li>
+                    <li class="pb-3"><a href="#" class="h4 text-decoration-none">About Me</a></li>
+                    <li class="pb-3"><a href="#" class="h4 text-decoration-none">Projects</a></li>
+                </ul>
+            </div>
+
+            <!-- Social -->
+            <div
+                class="align-items-center col-12 col-sm-4 d-flex justify-content-center justify-content-sm-start text-center text-sm-start socialCol">
+                <div class="d-block row">
+                    <div class="align-items-center col d-flex gap-3 justify-content-center pb-3">
+                        <a href="#" class="social-link" data-hover="instagramHover.png">
+                            <img src="icons/instagram.svg" class="iconFooter" alt="Instagram">
+                        </a>
+                        <a href="#" class="mb-0 text-decoration-none white-text-title">only.miki</a>
+                    </div>
+
+                    <div class="align-items-center col d-flex gap-3 justify-content-center pb-3">
+                        <a href="#" class="social-link" data-hover="linkedinHover.png">
+                            <img src="icons/linkedin.svg" class="iconFooter" alt="LinkedIn">
+                        </a>
+                        <a href="#" class="mb-0 text-decoration-none white-text-title">only.miki</a>
+                    </div>
+
+                    <div class="align-items-center col d-flex gap-3 justify-content-center pb-3">
+                        <a href="#" class="social-link" data-hover="gitHover.png">
+                            <img src="icons/github.svg" class="iconFooter" alt="GitHub">
+                        </a>
+                        <a href="#" class="mb-0 text-decoration-none white-text-title">only.miki</a>
+                    </div>
+                </div>
+            </div>
+
+            <h6 class="col-12 pt-4 text-center">Riga della privacy</h6>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+
+
+
+    </script>
+
+</body>
+
+</html>
