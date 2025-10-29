@@ -114,7 +114,7 @@ a:hover {
 
 /* ----- Decoration ----- */
 .decoration {
-    top: 460px;
+    top: 430px;
 }
 
 .diamond {
@@ -222,11 +222,13 @@ a:hover {
 }
 
 @media (max-width: 586px) {
-    .socialCol::before {
+    .star1 {
         display: none;
     }
+}
 
-    .star1 {
+@media (max-width: 768px) {
+    .socialCol::before {
         display: none;
     }
 }
@@ -237,11 +239,11 @@ a:hover {
     }
 
     .diamond3 {
-        top: 715px;
+        top: 685px;
     }
 
     .star1 {
-        top: 1585px;
+        top: 1525px;
     }
 }
 
@@ -268,15 +270,15 @@ a:hover {
 
 @media (min-width: 1400px) {
     .diamond2 {
-        top: 360px;
+        top: 355px;
     }
 
     .diamond3 {
-        top: 595px;
+        top: 560px;
     }
 
     .star1 {
-        top: 1320px;
+        top: 1255px;
     }
 
     .img-portrait {
