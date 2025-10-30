@@ -298,4 +298,8 @@ a:hover {
     .img-portrait {
         max-height: 450px;
     }
+
+    .img-carusel{
+        width: 400px;
+    }
 }
