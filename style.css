@@ -167,16 +167,16 @@ a:hover {
 }
 
 .diamond2 {
-    top: 360px;
+    top: 330px;
 }
 
 .diamond3 {
-    top: 595px;
+    top: 530px;
 }
 
 .star1 {
     width: 50px;
-    top: 1345px;
+    top: 1225px;
 }
 
 .no-rotate {
@@ -244,15 +244,15 @@ a:hover {
 
 @media (max-width: 1199px) {
     .diamond2 {
-        top: 420px;
+        top: 380px;
     }
 
     .diamond3 {
-        top: 685px;
+        top: 605px;
     }
 
     .star1 {
-        top: 1525px;
+        top: 1360px;
     }
 }
 
@@ -264,30 +264,35 @@ a:hover {
     }
 
     .diamond2 {
-        top: 440px;
+        top: 400px;
     }
 
     .diamond3 {
-        top: 770px;
+        top: 675px;
     }
 
     .star1 {
-        top: 1760px;
+        top: 1550px;
     }
 }
 
 
 @media (min-width: 1400px) {
     .diamond2 {
-        top: 355px;
+        top: 330px;
     }
 
     .diamond3 {
-        top: 560px;
+        top: 510px;
     }
 
     .star1 {
-        top: 1255px;
+        top: 1075px;
+    }
+
+    .decoration{
+        top: 400px;
+        width: 25px !important;
     }
 
     .img-portrait {
