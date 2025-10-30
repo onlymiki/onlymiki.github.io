@@ -36,6 +36,11 @@ body {
     font-family: "Hachi Maru Pop", cursive;
 }
 
+.light-blue-title {
+    color: var(--color-light-blue);
+    font-family: "Hachi Maru Pop", cursive;
+}
+
 .black-text {
     color: var(--color-black);
     font-size: 20px;
@@ -44,6 +49,10 @@ body {
 .blue-text {
     color: var(--color-blue);
     font-size: 20px;
+}
+
+.orange-text {
+    color: var(--color-orange);
 }
 
 .white-text {
