@@ -288,7 +288,7 @@ a:hover {
     }
 
     .splide__arrow svg{
-        fill: var(--color-blue) !important;
+        display: none;
     }
 }
 
