@@ -282,6 +282,14 @@ a:hover {
     .star1 {
         display: none;
     }
+
+    .splide__slide {
+        height: 500px !important;
+    }
+
+    .splide__arrow svg{
+        fill: var(--color-blue) !important;
+    }
 }
 
 @media (max-width: 768px) {
