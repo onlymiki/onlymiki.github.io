@@ -99,18 +99,50 @@ a:hover {
 }
 
 /* ----- Arrows carusel ------ */
-.splide__arrow svg {
-    fill: var(--color-black) !important;
+.splide__arrow {
+    background: transparent !important;
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
-.splide__arrow {
-    background: var(--color-white) !important;
+.splide__arrow svg {
+    fill: var(--color-white) !important;
+    opacity: 1 !important;
 }
+
+.splide__arrow svg:hover {
+    fill: var(--color-orange) !important;
+}
+
 
 .splide__slide {
+    transition: transform 0.3s ease;
+    border: 2px solid var(--color-blue);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 480px;
     cursor: pointer;
 }
 
+.splide__slide:hover {
+    transform: scale(1.01);
+}
+
+.splide__slide:hover .diamond-2 {
+    background-color: var(--color-orange);
+    border-color: var(--color-orange);
+    background-image: url("icons/arrow_right.svg");
+}
+
+.splide__pagination__page.is-active {
+    background: var(--color-orange) !important;
+}
+
+.splide__pagination__page {
+    background: var(--color-light-blue) !important;
+    opacity: 1 !important;
+}
 
 /* ----- Img ----- */
 .img-home {
@@ -119,6 +151,10 @@ a:hover {
 
 .img-portrait {
     max-height: 350px;
+}
+
+.img-carusel {
+    width: 200px;
 }
 
 /* ----- Decoration ----- */
@@ -131,7 +167,22 @@ a:hover {
     width: 100px;
     height: 100px;
     transform: rotate(45deg);
+}
 
+.diamond-2 {
+    border: 2px solid var(--color-blue);
+    width: 40px;
+    height: 40px;
+    transform: rotate(45deg);
+    background-image: url("icons/arrow_right_blue.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 0.3s ease, background-color 0.3s ease;
+}
+
+.diamond-2:hover {
+    background-color: var(--color-blue);
+    background-image: url("icons/arrow_right.svg");
 }
 
 .diamond-light {
@@ -146,12 +197,10 @@ a:hover {
     height: 100%;
     z-index: 15;
     pointer-events: none;
-    /* non blocca i clic sotto */
     width: 50px;
-    /* piccolo margine orizzontale */
 }
 
-/* Forma dei rombi */
+/* ----- Forma dei rombi ----- */
 .diamond-shape {
     width: 20px;
     height: 20px;
@@ -190,7 +239,6 @@ a:hover {
 .chevron-section {
     background-color: #dce9fb;
     height: 200px;
-    /*clip-path: polygon(0% 1%, 0% 72%, 48% 100%, 99% 71%, 99% 0%, 50% 23%);*/
     clip-path: polygon(0% 0%, 0% 70%, 50% 100%, 100% 70%, 100% 0%, 50% 25%);
 }
 
@@ -239,6 +287,10 @@ a:hover {
 @media (max-width: 768px) {
     .socialCol::before {
         display: none;
+    }
+
+    .splide__slide {
+        height: 600px;
     }
 }
 
@@ -290,7 +342,7 @@ a:hover {
         top: 1180px;
     }
 
-    .decoration{
+    .decoration {
         top: 400px;
         width: 25px !important;
     }
@@ -299,7 +351,7 @@ a:hover {
         max-height: 450px;
     }
 
-    .img-carusel{
+    .img-carusel {
         width: 400px;
     }
 }
