@@ -246,11 +246,17 @@ a:hover {
 /* ----- Header ------ */
 .header {
     background-image: linear-gradient(to bottom, var(--color-black), var(--color-blue));
+    transition: transform 0.3s ease-in-out;
 }
 
 .navbar-toggler:focus {
     box-shadow: none;
     outline: none;
+}
+
+.nav-hidden{
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
 }
 
 /* ----- Footer ------ */

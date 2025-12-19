@@ -212,14 +212,17 @@
                 </div>
 
                 <div class="col-12 col-sm-6">
-                    <h5 class="blue-text-title pt-4 pt-sm-0 ps-sm-4 text-center text-md-start" data-aos="fade-up">Strumenti e tecnologie
+                    <h5 class="blue-text-title pt-4 pt-sm-0 ps-sm-4 text-center text-md-start" data-aos="fade-up">
+                        Strumenti e tecnologie
                     </h5>
-                    <div class="d-flex flex-wrap gap-5 justify-content-center justify-content-sm-start pt-4 ps-sm-4" data-aos="fade-up">
+                    <div class="d-flex flex-wrap gap-5 justify-content-center justify-content-sm-start pt-4 ps-sm-4"
+                        data-aos="fade-up">
                         <img src="icons/bootstrap.svg" style="width: 40px" alt="Bootstrap">
                         <img src="icons/unity.svg" style="width: 40px" alt="Unity">
                         <img src="icons/figma.svg" style="width: 40px" alt="Figma">
                     </div>
-                    <div class="d-flex flex-wrap gap-5 justify-content-center justify-content-sm-start pt-4 ps-sm-4" data-aos="fade-up">
+                    <div class="d-flex flex-wrap gap-5 justify-content-center justify-content-sm-start pt-4 ps-sm-4"
+                        data-aos="fade-up">
                         <img src="icons/react.svg" style="width: 40px" alt="React">
                         <img src="icons/wordpress.svg" style="width: 40px" alt="WordPress">
                     </div>
@@ -612,6 +615,22 @@
             }).mount();
         });
 
+
+        // Per scroll navabar
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('.header');
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (currentScroll > lastScrollTop && currentScroll > 100) {
+                navbar.classList.add('nav-hidden');
+            } else {
+                navbar.classList.remove('nav-hidden');
+            }
+
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+        });
 
     </script>
 
