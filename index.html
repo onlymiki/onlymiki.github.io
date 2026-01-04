@@ -1,639 +1,893 @@
 <!DOCTYPE html>
 <html lang="it">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Zain:wght@300;400;700&display=swap"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-    <link rel="shortcut icon" href="/icons/logo.svg" type="image/x-icon">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Zain:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <link rel="shortcut icon" href="/icons/logo.svg" type="image/x-icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
 
-<body class="bg-blue">
-
+  <body class="bg-blue">
     <!-- Header -->
     <nav class="navbar navbar-expand-md px-md-4 p-0 header sticky-lg-top">
-        <!-- Logo -->
-        <a class="navbar-brand ps-4" href="#">
-            <img src="icons/logo.svg" alt="logo" style="height: 40px;">
-        </a>
+      <!-- Logo -->
+      <a class="navbar-brand ps-4" href="#">
+        <img src="icons/logo.svg" alt="logo" style="height: 40px" />
+      </a>
 
-        <!-- Bottone hamburger -->
-        <button class="border-0 navbar-toggler pe-4 py-4 custom-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarNav">
-            <img src="icons/hamburgerMenu.svg" alt="menu" style="width: 30px; height: 30px;">
-        </button>
+      <!-- Bottone hamburger -->
+      <button
+        class="border-0 navbar-toggler pe-4 py-4 custom-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <img
+          src="icons/hamburgerMenu.svg"
+          alt="menu"
+          style="width: 30px; height: 30px"
+        />
+      </button>
 
-        <!-- Link -->
-        <div class="collapse navbar-collapse py-md-4" id="navbarNav">
-            <ul
-                class="align-items-md-center d-flex gap-md-5 justify-content-evenly navbar-nav ms-auto white-text-title">
-                <li class="nav-item ps-4 ps-md-0 pt-3 pt-md-0"><a
-                        class="active h4 text-decoration-none white-text-title" href="index.html">Home</a></li>
-                <li class="nav-item ps-4 ps-md-0 pt-3 pt-md-0"><a class="h4 text-decoration-none white-text-title"
-                        href="#aboutme">About</a></li>
-                <li class="nav-item ps-4 ps-md-0 py-3 py-md-0"><a class="h4 text-decoration-none white-text-title"
-                        href="#image-text-slider">Projects</a></li>
-            </ul>
-        </div>
+      <!-- Link -->
+      <div class="collapse navbar-collapse py-md-4" id="navbarNav">
+        <ul
+          class="align-items-md-center d-flex gap-md-5 justify-content-evenly navbar-nav ms-auto white-text-title"
+        >
+          <li class="nav-item ps-4 ps-md-0 pt-3 pt-md-0">
+            <a
+              class="active h4 text-decoration-none white-text-title"
+              href="index.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item ps-4 ps-md-0 pt-3 pt-md-0">
+            <a class="h4 text-decoration-none white-text-title" href="#aboutme"
+              >About</a
+            >
+          </li>
+          <li class="nav-item ps-4 ps-md-0 py-3 py-md-0">
+            <a
+              class="h4 text-decoration-none white-text-title"
+              href="#image-text-slider"
+              >Projects</a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- Home -->
     <div class="container my-5" data-aos="fade-up">
-        <div class="align-items-center d-md-flex gap-5 justify-content-center text-center text-md-start">
-            <img src="img/immagine_curriculum.svg" class="img-fluid img-home pb-2 pb-md-0" alt="foto profilo">
-            <div>
-                <h4 class="orange-text-title"><strong>Michela Mariani</strong></h4>
-                <h5 class="white-text-title pb-2">24 anni</h5>
-                <p class="px-5 px-md-0 pb-2 white-text">
-                    Sono Michela Mariani, ho 24 anni e attualmente
-                    sono laureanda del corso magistrale di Teoria e
-                    Tecnologia della Comunicazione in Bicocca.
-                    Ho acquisito competenze in HTML, CSS,
-                    JavaScript e React, e sto costruendo progetti
-                    personali per migliorare continuamente le mie
-                    abilità. Cerco lavoro come sviluppatrice front-end,
-                    mi interessa molto tutto quello che riguarda il
-                    mondo UI/UX. <br>
-                    Nel corso del mio percorso universitario ho svolto diversi progetti e utilizzato differenti
-                    tecnologie e linguaggi. Ho creato questo sito con lo scopo di illustrare brevemente quello su cui ho
-                    lavorato.
-                </p>
-                <a href="#image-text-slider"
-                    class="d-flex align-items-center justify-content-center justify-content-md-start w-100 text-decoration-none">
-                    <div class="border-0 d-flex light-blue-btn">
-                    </div>
-                </a>
-            </div>
+      <div
+        class="align-items-center d-md-flex gap-5 justify-content-center text-center text-md-start"
+      >
+        <img
+          src="img/immagine_curriculum.svg"
+          class="img-fluid img-home pb-2 pb-md-0"
+          alt="foto profilo"
+        />
+        <div>
+          <h4 class="orange-text-title"><strong>Michela Mariani</strong></h4>
+          <h5 class="white-text-title pb-2">24 anni</h5>
+          <p class="px-5 px-md-0 pb-2 white-text">
+            Sono Michela Mariani, ho 24 anni e attualmente sono laureanda del
+            corso magistrale di Teoria e Tecnologia della Comunicazione in
+            Bicocca. Ho acquisito competenze in HTML, CSS, JavaScript e React, e
+            sto costruendo progetti personali per migliorare continuamente le
+            mie abilità. Cerco lavoro come sviluppatrice front-end, mi interessa
+            molto tutto quello che riguarda il mondo UI/UX. <br />
+            Nel corso del mio percorso universitario ho svolto diversi progetti
+            e utilizzato differenti tecnologie e linguaggi. Ho creato questo
+            sito con lo scopo di illustrare brevemente quello su cui ho
+            lavorato.
+          </p>
+          <a
+            href="#image-text-slider"
+            class="d-flex align-items-center justify-content-center justify-content-md-start w-100 text-decoration-none"
+          >
+            <div class="border-0 d-flex light-blue-btn"></div>
+          </a>
         </div>
+      </div>
     </div>
-
 
     <!-- About -->
     <!-- Sezione education -->
     <div id="aboutme" class="light-blue-background position-relative pb-5">
-        <div class="container mt-5 text-center text-md-start position-relative">
-            <h4 class="blue-text-title py-4" data-aos="fade-up">About Me</h4>
+      <div class="container mt-5 text-center text-md-start position-relative">
+        <h4 class="blue-text-title py-4" data-aos="fade-up">About Me</h4>
 
-            <!-- immagine decorativa assoluta -->
-            <img src="/img/prova.svg" alt="decorazione"
-                class="decoration d-none d-md-flex position-absolute start-0 translate-middle-y"
-                style="width:28px; z-index:10;">
+        <!-- immagine decorativa assoluta -->
+        <img
+          src="/img/prova.svg"
+          alt="decorazione"
+          class="decoration d-none d-md-flex position-absolute start-0 translate-middle-y"
+          style="width: 28px; z-index: 10"
+        />
 
-            <div class="orange-diamonds position-absolute start-0 d-none d-md-block">
-                <div class="diamond-shape diamond1"></div>
-                <div class="diamond-shape diamond2"></div>
-                <div class="diamond-shape diamond3"></div>
-            </div>
-
-            <div class="row align-items-center justify-content-evenly m-0">
-                <div class="col-md-8 col-12">
-                    <h6 class="blue-text-title pt-2" data-aos="fade-up">Liceo delle scienze umane</h6>
-                    <h6 class="black-text-title pb-2" data-aos="fade-up">IIS Bachelet - Abbiategrasso</h6>
-                    <p class="black-text" data-aos="fade-up">
-                        Ho frequentato il Liceo delle Scienze Umane dall'anno 2015 fino al 2020. Ho scelto questo
-                        percorso perchè mi affiscinava l'idea di studiare il comportamento delle
-                        persone. <br>
-                        Durante gli anni del liceo ho potuto approfondire materie come psicologia, pedagogia, sociologia
-                        e antropologia, ma allo stesso tempo mi sono avvicinata anche tanto alle materie scientifiche,
-                        motivo per cui in triennale ho scelto di intraprendere una strada differente.
-                    </p>
-                </div>
-                <div class="col-md-3 col-12 diamond rounded-2 my-4 my-md-0">
-                    <p class="m-0 pb-1 white-text" data-aos="fade-up">voto finale</p>
-                    <div class="d-flex align-items-center justify-content-center" data-aos="fade-up">
-                        <h3 class="no-rotate white-text-title text-center">93</h3>
-                        <p class="no-rotate pt-3 white-text text-center">/100</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row align-items-center justify-content-evenly m-0">
-                <div class="col-md-8 col-12">
-                    <h6 class="blue-text-title pt-2" data-aos="fade-up">Corso di laurea triennale</h6>
-                    <h6 class="black-text-title pb-2" data-aos="fade-up">Informatica</h6>
-                    <p class="black-text" data-aos="fade-up">
-                        Ho frequentato il corso triennale di Informatica presso l'Università degli Studi di
-                        Milano-Bicocca dall’anno accademico 2020/2021 al 2022/2023. È stato un percorso impegnativo e
-                        non sono mancate difficoltà, ma questi anni mi hanno permesso di costruire una solida base nella
-                        materia. I corsi che ho apprezzato maggiormente sono stati quelli legati alla programmazione in
-                        Java, alla programmazione di dispositivi mobili e all’interazione uomo-macchina.
-                    </p>
-                </div>
-                <div class="col-md-3 col-12 diamond rounded-2 my-4 my-md-0">
-                    <p class="m-0 pb-1 white-text" data-aos="fade-up">voto finale</p>
-                    <div class="d-flex align-items-center justify-content-center" data-aos="fade-up">
-                        <h3 class="no-rotate white-text-title text-center">88</h3>
-                        <p class="no-rotate pt-3 white-text text-center">/110</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row align-items-center justify-content-evenly m-0">
-                <div class="col-md-8 col-12 pb-4">
-                    <h6 class="blue-text-title pt-2" data-aos="fade-up">Corso di laurea magistrale</h6>
-                    <h6 class="black-text-title pb-2" data-aos="fade-up">Teoria e Tecnologia della Comunicazione</h6>
-                    <p class="black-text" data-aos="fade-up">
-                        Mi sono iscritta a questo corso magistrale presso l’Università di Milano-Bicocca nell’anno
-                        accademico 2023/2024, subito dopo la triennale, e attualmente sono laureanda.
-                        Ho scelto questo percorso per unire i miei interessi principali: psicologia e informatica.
-                        Tra le materie che più mi hanno appassionata vi sono realtà virtuale, applicazioni web,
-                        comunicazione visiva e psicologia delle influenze sociali. Attualmente sto scrivendo la tesi,
-                        voto di partenza 104/110.
-                    </p>
-                </div>
-                <div class="col-sm-3 col-12 diamond rounded-2 my-4 my-sm-0">
-                    <p class="m-0 pb-1 white-text" data-aos="fade-up">media</p>
-                    <div class="d-flex align-items-center justify-content-center" data-aos="fade-up">
-                        <h3 class="no-rotate white-text-title text-center">28</h3>
-                        <p class="no-rotate pt-3 white-text text-center">/30</p>
-                    </div>
-                </div>
-            </div>
+        <div
+          class="orange-diamonds position-absolute start-0 d-none d-md-block"
+        >
+          <div class="diamond-shape diamond1"></div>
+          <div class="diamond-shape diamond2"></div>
+          <div class="diamond-shape diamond3"></div>
         </div>
+
+        <div class="row align-items-center justify-content-evenly m-0">
+          <div class="col-md-8 col-12">
+            <h6 class="blue-text-title pt-2" data-aos="fade-up">
+              Liceo delle scienze umane
+            </h6>
+            <h6 class="black-text-title pb-2" data-aos="fade-up">
+              IIS Bachelet - Abbiategrasso
+            </h6>
+            <p class="black-text" data-aos="fade-up">
+              Ho frequentato il Liceo delle Scienze Umane dall'anno 2015 fino al
+              2020. Ho scelto questo percorso perchè mi affiscinava l'idea di
+              studiare il comportamento delle persone. <br />
+              Durante gli anni del liceo ho potuto approfondire materie come
+              psicologia, pedagogia, sociologia e antropologia, ma allo stesso
+              tempo mi sono avvicinata anche tanto alle materie scientifiche,
+              motivo per cui in triennale ho scelto di intraprendere una strada
+              differente.
+            </p>
+          </div>
+          <div class="col-md-3 col-12 diamond rounded-2 my-4 my-md-0">
+            <p class="m-0 pb-1 white-text" data-aos="fade-up">voto finale</p>
+            <div
+              class="d-flex align-items-center justify-content-center"
+              data-aos="fade-up"
+            >
+              <h3 class="no-rotate white-text-title text-center">93</h3>
+              <p class="no-rotate pt-3 white-text text-center">/100</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center justify-content-evenly m-0">
+          <div class="col-md-8 col-12">
+            <h6 class="blue-text-title pt-2" data-aos="fade-up">
+              Corso di laurea triennale
+            </h6>
+            <h6 class="black-text-title pb-2" data-aos="fade-up">
+              Informatica
+            </h6>
+            <p class="black-text" data-aos="fade-up">
+              Ho frequentato il corso triennale di Informatica presso
+              l'Università degli Studi di Milano-Bicocca dall’anno accademico
+              2020/2021 al 2022/2023. È stato un percorso impegnativo e non sono
+              mancate difficoltà, ma questi anni mi hanno permesso di costruire
+              una solida base nella materia. I corsi che ho apprezzato
+              maggiormente sono stati quelli legati alla programmazione in Java,
+              alla programmazione di dispositivi mobili e all’interazione
+              uomo-macchina.
+            </p>
+          </div>
+          <div class="col-md-3 col-12 diamond rounded-2 my-4 my-md-0">
+            <p class="m-0 pb-1 white-text" data-aos="fade-up">voto finale</p>
+            <div
+              class="d-flex align-items-center justify-content-center"
+              data-aos="fade-up"
+            >
+              <h3 class="no-rotate white-text-title text-center">88</h3>
+              <p class="no-rotate pt-3 white-text text-center">/110</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center justify-content-evenly m-0">
+          <div class="col-md-8 col-12 pb-4">
+            <h6 class="blue-text-title pt-2" data-aos="fade-up">
+              Corso di laurea magistrale
+            </h6>
+            <h6 class="black-text-title pb-2" data-aos="fade-up">
+              Teoria e Tecnologia della Comunicazione
+            </h6>
+            <p class="black-text" data-aos="fade-up">
+              Mi sono iscritta a questo corso magistrale presso l’Università di
+              Milano-Bicocca nell’anno accademico 2023/2024, subito dopo la
+              triennale, e attualmente sono laureanda. Ho scelto questo percorso
+              per unire i miei interessi principali: psicologia e informatica.
+              Tra le materie che più mi hanno appassionata vi sono realtà
+              virtuale, applicazioni web, comunicazione visiva e psicologia
+              delle influenze sociali. Attualmente sto scrivendo la tesi, voto
+              di partenza 104/110.
+            </p>
+          </div>
+          <div class="col-sm-3 col-12 diamond rounded-2 my-4 my-sm-0">
+            <p class="m-0 pb-1 white-text" data-aos="fade-up">media</p>
+            <div
+              class="d-flex align-items-center justify-content-center"
+              data-aos="fade-up"
+            >
+              <h3 class="no-rotate white-text-title text-center">28</h3>
+              <p class="no-rotate pt-3 white-text text-center">/30</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Sezione skills -->
-    <div class="d-md-flex d-none justify-content-around position-absolute star1 z-2 w-100" data-aos="fade-up">
-        <img src="/img/blue_star.svg" style="width: 50px;" alt="blue star">
-        <img src="/img/blue_star.svg" style="width: 50px;" alt="blue star">
+    <div
+      class="d-md-flex d-none justify-content-around position-absolute star1 z-2 w-100"
+      data-aos="fade-up"
+    >
+      <img src="/img/blue_star.svg" style="width: 50px" alt="blue star" />
+      <img src="/img/blue_star.svg" style="width: 50px" alt="blue star" />
     </div>
-    <div class="white-background py-5 ">
-        <!-- Idea per ora: due colonne una con linguaggi e stelline, dall'altro software -->
-        <!-- Per i software potrebbero esserci delle immagini (?) -->
-        <div class="container w-100">
-            <div class="row">
-                <div class="col-12 col-sm-6">
-                    <h5 class="blue-text-title text-center text-md-start" data-aos="fade-up">Linguaggi</h5>
-                    <div class="align-items-center d-flex justify-content-between px-2 px-sm-0 pt-1">
-                        <p class="black-text mb-0 me-2" data-aos="fade-up">HTML</p>
-                        <img src="/icons/cinque_diamanti.svg" alt="cinque stelle" data-aos="fade-up">
-                    </div>
-
-                    <div class="align-items-center d-flex justify-content-between px-2 px-sm-0">
-                        <p class="black-text mb-0 me-2" data-aos="fade-up">CSS</p>
-                        <img src="/icons/quattro_diamanti.svg" alt="quattro stelle" data-aos="fade-up">
-                    </div>
-
-                    <div class="align-items-center d-flex justify-content-between px-2 px-sm-0">
-                        <p class="black-text mb-0 me-2" data-aos="fade-up">JavaScript</p>
-                        <img src="/icons/quattro_diamanti.svg" alt="quattro stelle" data-aos="fade-up">
-                    </div>
-
-                    <div class="align-items-center d-flex justify-content-between px-2 px-sm-0">
-                        <p class="black-text mb-0 me-2" data-aos="fade-up">Java</p>
-                        <img src="/icons/tre_diamanti.svg" alt="tre stelle" data-aos="fade-up">
-                    </div>
-
-                    <div class="align-items-center d-flex justify-content-between px-2 px-sm-0">
-                        <p class="black-text mb-0 me-2" data-aos="fade-up">C#</p>
-                        <img src="/icons/tre_diamanti.svg" alt="tre stelle" data-aos="fade-up">
-                    </div>
-
-                    <div class="align-items-center d-flex justify-content-between px-2 px-sm-0">
-                        <p class="black-text mb-0 me-2" data-aos="fade-up">C++</p>
-                        <img src="/icons/due_diamanti.svg" alt="due stelle" data-aos="fade-up">
-                    </div>
-
-                    <div class="align-items-center d-flex justify-content-between px-2 px-sm-0">
-                        <p class="black-text mb-0 me-2" data-aos="fade-up">TypeScript</p>
-                        <img src="/icons/due_diamanti.svg" alt="due stelle" data-aos="fade-up">
-                    </div>
-
-                    <div class="align-items-center d-flex justify-content-between px-2 px-sm-0">
-                        <p class="black-text mb-0 me-2" data-aos="fade-up">Prolog</p>
-                        <img src="/icons/un_diamante.svg" alt="una stella" data-aos="fade-up">
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6">
-                    <h5 class="blue-text-title pt-4 pt-sm-0 ps-sm-4 text-center text-md-start" data-aos="fade-up">
-                        Strumenti e tecnologie
-                    </h5>
-                    <div class="d-flex flex-wrap gap-5 justify-content-center justify-content-sm-start pt-4 ps-sm-4"
-                        data-aos="fade-up">
-                        <img src="icons/bootstrap.svg" style="width: 40px" alt="Bootstrap">
-                        <img src="icons/unity.svg" style="width: 40px" alt="Unity">
-                        <img src="icons/figma.svg" style="width: 40px" alt="Figma">
-                    </div>
-                    <div class="d-flex flex-wrap gap-5 justify-content-center justify-content-sm-start pt-4 ps-sm-4"
-                        data-aos="fade-up">
-                        <img src="icons/react.svg" style="width: 40px" alt="React">
-                        <img src="icons/wordpress.svg" style="width: 40px" alt="WordPress">
-                    </div>
-
-                    <div class="align-items-center d-flex justify-content-between px-2 px-sm-0 pt-4 ps-sm-4">
-                        <p class="black-text mb-0 me-2" data-aos="fade-up">BPMN, CMMN, IFML</p>
-                        <img src="/icons/un_diamante.svg" alt="una stella" data-aos="fade-up">
-                    </div>
-                    <div class="align-items-center d-flex justify-content-between px-2 px-sm-0 ps-sm-4">
-                        <p class="black-text mb-0 me-2" data-aos="fade-up">Jason</p>
-                        <img src="/icons/un_diamante.svg" alt="una stella" data-aos="fade-up">
-                    </div>
-
-                </div>
+    <div class="white-background py-5">
+      <!-- Idea per ora: due colonne una con linguaggi e stelline, dall'altro software -->
+      <!-- Per i software potrebbero esserci delle immagini (?) -->
+      <div class="container w-100">
+        <div class="row">
+          <div class="col-12 col-sm-6">
+            <h5
+              class="blue-text-title text-center text-md-start"
+              data-aos="fade-up"
+            >
+              Linguaggi
+            </h5>
+            <div
+              class="align-items-center d-flex justify-content-between px-2 px-sm-0 pt-1"
+            >
+              <p class="black-text mb-0 me-2" data-aos="fade-up">HTML</p>
+              <img
+                src="/icons/cinque_diamanti.svg"
+                alt="cinque stelle"
+                data-aos="fade-up"
+              />
             </div>
+
+            <div
+              class="align-items-center d-flex justify-content-between px-2 px-sm-0"
+            >
+              <p class="black-text mb-0 me-2" data-aos="fade-up">CSS</p>
+              <img
+                src="/icons/quattro_diamanti.svg"
+                alt="quattro stelle"
+                data-aos="fade-up"
+              />
+            </div>
+
+            <div
+              class="align-items-center d-flex justify-content-between px-2 px-sm-0"
+            >
+              <p class="black-text mb-0 me-2" data-aos="fade-up">JavaScript</p>
+              <img
+                src="/icons/quattro_diamanti.svg"
+                alt="quattro stelle"
+                data-aos="fade-up"
+              />
+            </div>
+
+            <div
+              class="align-items-center d-flex justify-content-between px-2 px-sm-0"
+            >
+              <p class="black-text mb-0 me-2" data-aos="fade-up">Java</p>
+              <img
+                src="/icons/tre_diamanti.svg"
+                alt="tre stelle"
+                data-aos="fade-up"
+              />
+            </div>
+
+            <div
+              class="align-items-center d-flex justify-content-between px-2 px-sm-0"
+            >
+              <p class="black-text mb-0 me-2" data-aos="fade-up">C#</p>
+              <img
+                src="/icons/tre_diamanti.svg"
+                alt="tre stelle"
+                data-aos="fade-up"
+              />
+            </div>
+
+            <div
+              class="align-items-center d-flex justify-content-between px-2 px-sm-0"
+            >
+              <p class="black-text mb-0 me-2" data-aos="fade-up">C++</p>
+              <img
+                src="/icons/due_diamanti.svg"
+                alt="due stelle"
+                data-aos="fade-up"
+              />
+            </div>
+
+            <div
+              class="align-items-center d-flex justify-content-between px-2 px-sm-0"
+            >
+              <p class="black-text mb-0 me-2" data-aos="fade-up">TypeScript</p>
+              <img
+                src="/icons/due_diamanti.svg"
+                alt="due stelle"
+                data-aos="fade-up"
+              />
+            </div>
+
+            <div
+              class="align-items-center d-flex justify-content-between px-2 px-sm-0"
+            >
+              <p class="black-text mb-0 me-2" data-aos="fade-up">Prolog</p>
+              <img
+                src="/icons/un_diamante.svg"
+                alt="una stella"
+                data-aos="fade-up"
+              />
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6">
+            <h5
+              class="blue-text-title pt-4 pt-sm-0 ps-sm-4 text-center text-md-start"
+              data-aos="fade-up"
+            >
+              Skill tecniche
+            </h5>
+            <p
+              class="black-text pt-4 pt-sm-0 ps-sm-4 text-center text-md-start"
+              data-aos="fade-up"
+            >
+              Buona conoscenza:
+            </p>
+            <div
+              class="d-flex flex-wrap gap-5 justify-content-center justify-content-sm-start pt-2 ps-sm-4"
+              data-aos="fade-up"
+            >
+              <img
+                src="icons/bootstrap.svg"
+                style="width: 40px"
+                alt="Bootstrap"
+              />
+              <img
+                src="icons/tailwind.svg"
+                style="width: 40px"
+                alt="Tailwind"
+              />
+              <img src="icons/unity.svg" style="width: 40px" alt="Unity" />
+              <img
+                src="icons/github_blue.svg"
+                style="width: 40px"
+                alt="Git Hub"
+              />
+            </div>
+            <div
+              class="d-flex flex-wrap gap-5 justify-content-center justify-content-sm-start pt-4 ps-sm-4"
+              data-aos="fade-up"
+            >
+              <img src="icons/react.svg" style="width: 40px" alt="React" />
+              <img src="icons/figma.svg" style="width: 40px" alt="Figma" />
+              <img
+                src="icons/wordpress.svg"
+                style="width: 40px"
+                alt="WordPress"
+              />
+            </div>
+
+            <p
+              class="black-text pt-4 ps-sm-4 text-center text-md-start"
+              data-aos="fade-up"
+            >
+              Nozioni accademiche:
+              <span class="blue-text">BPMN, CMMN, DMN, IFML, JaCaMo</span>
+            </p>
+          </div>
         </div>
-
-
+      </div>
     </div>
-
-
 
     <!-- Projects-->
-    <div id="image-text-slider" class="splide container-fluid px-sm-5 py-5" data-aos="fade-up">
+    <div
+      id="image-text-slider"
+      class="splide container-fluid px-sm-5 py-5"
+      data-aos="fade-up"
+    >
+      <div class="splide__track">
+        <ul class="splide__list">
+          <!-- SAM -->
+          <li
+            id="miniatura_sam"
+            class="splide__slide d-flex flex-column align-items-center text-center light-blue-background px-2"
+          >
+            <div class="d-flex justify-content-center mb-3">
+              <img
+                src="/img/miniature2.0/miniatura_sam.svg"
+                alt="miniatura progetto"
+                class="img-fluid p-4 p-md-3"
+              />
+            </div>
 
-        <div class="splide__track">
-            <ul class="splide__list">
+            <div
+              class="align-items-center d-flex flex-column justify-content-between h-100 row"
+            >
+              <h4 class="blue-text-title col-2 text-center px-md-3 w-100">
+                Progetto in WordPress
+              </h4>
+              <p class="black-text col-6 px-5 pt-3 w-100">
+                Sito realizzato in WordPress con tema child e personalizzazioni
+                in CSS, PHP e plugin.
+              </p>
+              <div class="d-flex col-4 justify-content-end w-100 pe-4 pb-3">
+                <div
+                  class="diamond-2 rounded-2 d-flex align-items-center justify-content-center p-1"
+                ></div>
+              </div>
+            </div>
+          </li>
 
-                <!-- SAM -->
-                <li id="miniatura_sam"
-                    class="splide__slide d-flex flex-column align-items-center text-center light-blue-background px-2">
+          <!-- Ergonomia -->
+          <li
+            id="miniatura_ergonomia"
+            class="splide__slide d-flex flex-column align-items-center text-center light-blue-background px-2"
+          >
+            <div class="d-flex justify-content-center mb-3">
+              <img
+                src="/img/miniature2.0/miniatura_ergonomia.svg"
+                alt="miniatura progetto"
+                class="img-fluid p-4 p-md-3"
+              />
+            </div>
 
-                    <div class="d-flex justify-content-center mb-3">
-                        <img src="/img/miniature2.0/miniatura_sam.svg" alt="miniatura progetto"
-                            class="img-fluid p-4 p-md-3">
-                    </div>
+            <div
+              class="align-items-center d-flex flex-column justify-content-between h-100 row"
+            >
+              <h4 class="blue-text-title col-2 text-center px-md-3 w-100">
+                Progetto Ergonomia
+              </h4>
+              <p class="black-text col-6 px-5 pt-3 w-100">
+                Prototipo Figma di app per la cura della pelle, sviluppato
+                seguendo le fasi del processo ergonomico HCI.
+              </p>
+              <div class="d-flex col-4 justify-content-end w-100 pe-4 pb-3">
+                <div
+                  class="diamond-2 rounded-2 d-flex align-items-center justify-content-center p-1"
+                ></div>
+              </div>
+            </div>
+          </li>
 
-                    <div class="align-items-center d-flex flex-column justify-content-between h-100 row">
-                        <h4 class="blue-text-title col-2 text-center px-md-3 w-100">Progetto in WordPress</h4>
-                        <p class="black-text col-6 px-5 pt-3 w-100">
-                            Sito realizzato in WordPress
-                            con tema child e personalizzazioni in CSS, PHP e plugin.
-                        </p>
-                        <div class="d-flex col-4 justify-content-end w-100 pe-4 pb-3">
-                            <div class="diamond-2 rounded-2 d-flex align-items-center justify-content-center p-1">
+          <!-- Sistemi informativi -->
+          <li
+            id="miniatura_sistemi_informativi"
+            class="splide__slide d-flex flex-column align-items-center text-center light-blue-background px-2"
+          >
+            <div class="d-flex justify-content-center mb-3">
+              <img
+                src="/img/miniature2.0/miniatura_sistemi.svg"
+                alt="miniatura progetto"
+                class="img-fluid p-4 p-md-3"
+              />
+            </div>
 
-                            </div>
-                        </div>
+            <div
+              class="align-items-center d-flex flex-column justify-content-between h-100 row"
+            >
+              <h4 class="blue-text-title col-2 text-center px-md-3 w-100">
+                Modellazione processo aziendale
+              </h4>
+              <p class="black-text col-6 px-5 pt-3 w-100">
+                Analisi e modellazione delle attività di una pizzeria con BPMN,
+                CMMN, DMN e IFML
+              </p>
+              <div class="d-flex col-4 justify-content-end w-100 pe-4 pb-3">
+                <div
+                  class="diamond-2 rounded-2 d-flex align-items-center justify-content-center p-1"
+                ></div>
+              </div>
+            </div>
+          </li>
 
-                    </div>
-                </li>
+          <!-- Realtà virtuale -->
+          <li
+            id="miniatura_vr"
+            class="splide__slide d-flex flex-column align-items-center text-center light-blue-background px-2"
+          >
+            <div class="d-flex justify-content-center mb-3">
+              <img
+                src="/img/miniature2.0/miniatura_vr.svg"
+                alt="miniatura progetto"
+                class="img-fluid p-4 p-md-3"
+              />
+            </div>
 
+            <div
+              class="align-items-center d-flex flex-column justify-content-between h-100 row"
+            >
+              <h4 class="blue-text-title col-2 text-center px-md-3 w-100">
+                Progetto Unity
+              </h4>
+              <p class="black-text col-6 px-5 pt-3 w-100">
+                Esperienza interattiva ambientata nello spazio, sviluppata in
+                Unity.
+              </p>
+              <div class="d-flex col-4 justify-content-end w-100 pe-4 pb-3">
+                <div
+                  class="diamond-2 rounded-2 d-flex align-items-center justify-content-center p-1"
+                ></div>
+              </div>
+            </div>
+          </li>
 
-                <!-- Ergonomia -->
-                <li id="miniatura_ergonomia"
-                    class="splide__slide d-flex flex-column align-items-center text-center light-blue-background px-2">
+          <!-- Web App -->
+          <li
+            id="miniatura_web_app"
+            class="splide__slide d-flex flex-column align-items-center text-center light-blue-background px-2"
+          >
+            <div class="d-flex justify-content-center mb-3">
+              <img
+                src="/img/miniature2.0/miniatura_web_app.svg"
+                alt="miniatura progetto"
+                class="img-fluid p-4 p-md-3"
+              />
+            </div>
 
-                    <div class="d-flex justify-content-center mb-3">
-                        <img src="/img/miniature2.0/miniatura_ergonomia.svg" alt="miniatura progetto"
-                            class="img-fluid p-4 p-md-3">
-                    </div>
+            <div
+              class="align-items-center d-flex flex-column justify-content-between h-100 row"
+            >
+              <h4 class="blue-text-title col-2 text-center px-md-3 w-100">
+                Progetto React
+              </h4>
+              <p class="black-text col-6 px-5 pt-3 w-100">
+                Web App per visualizzare cocktail tramite API TheCocktailDB,
+                realizzata con React, react-router-dom e Bootstrap.
+              </p>
+              <div class="d-flex col-4 justify-content-end w-100 pe-4 pb-3">
+                <div
+                  class="diamond-2 rounded-2 d-flex align-items-center justify-content-center p-1"
+                ></div>
+              </div>
+            </div>
+          </li>
 
-                    <div class="align-items-center d-flex flex-column justify-content-between h-100 row">
-                        <h4 class="blue-text-title col-2 text-center px-md-3 w-100">Progetto Ergonomia</h4>
-                        <p class="black-text col-6 px-5 pt-3 w-100">
-                            Prototipo Figma di app per la cura della pelle, sviluppato seguendo le fasi del processo
-                            ergonomico HCI.
-                        </p>
-                        <div class="d-flex col-4 justify-content-end w-100 pe-4 pb-3">
-                            <div class="diamond-2 rounded-2 d-flex align-items-center justify-content-center p-1">
+          <!-- CVeDI -->
+          <li
+            id="miniatura_CVeDI"
+            class="splide__slide d-flex flex-column align-items-center text-center light-blue-background px-2"
+          >
+            <div class="d-flex justify-content-center mb-3">
+              <img
+                src="/img/miniature2.0/miniatura_CVeDI.svg"
+                alt="miniatura progetto"
+                class="img-fluid p-4 p-md-3"
+              />
+            </div>
 
-                            </div>
-                        </div>
+            <div
+              class="align-items-center d-flex flex-column justify-content-between h-100 row"
+            >
+              <h4 class="blue-text-title col-2 text-center px-md-3 w-100">
+                Progetto HTML, CSS, JS e Bootstrap
+              </h4>
+              <p class="black-text col-6 px-5 pt-3 w-100">
+                Interfaccia per totem informativi turistici, sviluppata in HTML,
+                CSS, JS e Bootstrap.
+              </p>
+              <div class="d-flex col-4 justify-content-end w-100 pe-4 pb-3">
+                <div
+                  class="diamond-2 rounded-2 d-flex align-items-center justify-content-center p-1"
+                ></div>
+              </div>
+            </div>
+          </li>
 
-                    </div>
-                </li>
+          <!-- Volantino -->
+          <li
+            id="volantino"
+            class="splide__slide d-flex flex-column align-items-center text-center light-blue-background px-2"
+          >
+            <div class="d-flex justify-content-center mb-3">
+              <img
+                src="/img/miniature2.0/miniatura_volantino.svg"
+                alt="miniatura progetto"
+                class="img-fluid p-4 p-md-3"
+              />
+            </div>
 
-                <!-- Sistemi informativi -->
-                <li id="miniatura_sistemi_informativi"
-                    class="splide__slide d-flex flex-column align-items-center text-center light-blue-background px-2">
+            <div
+              class="align-items-center d-flex flex-column justify-content-between h-100 row"
+            >
+              <h4 class="blue-text-title col-2 text-center px-md-3 w-100">
+                Volantino pizzeria
+              </h4>
+              <p class="black-text col-6 px-5 pt-3 w-100">
+                Restyling grafico di un volantino di una pizzeria realizzato con
+                Figma e Canva.
+              </p>
+              <div class="d-flex col-4 justify-content-end w-100 pe-4 pb-3">
+                <div
+                  class="diamond-2 rounded-2 d-flex align-items-center justify-content-center p-1"
+                ></div>
+              </div>
+            </div>
+          </li>
 
-                    <div class="d-flex justify-content-center mb-3">
-                        <img src="/img/miniature2.0/miniatura_sistemi.svg" alt="miniatura progetto"
-                            class="img-fluid p-4 p-md-3">
-                    </div>
+          <!-- MB Runners -->
+          <li
+            id="miniatura_mbRunners"
+            class="splide__slide d-flex flex-column align-items-center text-center light-blue-background px-2"
+          >
+            <div class="d-flex justify-content-center mb-3">
+              <img
+                src="/img/miniature2.0/miniatura_mbRunners.svg"
+                alt="miniatura progetto"
+                class="img-fluid p-4 p-md-3"
+              />
+            </div>
 
-                    <div class="align-items-center d-flex flex-column justify-content-between h-100 row">
-                        <h4 class="blue-text-title col-2 text-center px-md-3 w-100">Modellazione processo aziendale</h4>
-                        <p class="black-text col-6 px-5 pt-3 w-100">
-                            Analisi e modellazione delle attività di una pizzeria con BPMN, CMMN, DMN e IFML
-                        </p>
-                        <div class="d-flex col-4 justify-content-end w-100 pe-4 pb-3">
-                            <div class="diamond-2 rounded-2 d-flex align-items-center justify-content-center p-1">
+            <div
+              class="align-items-center d-flex flex-column justify-content-between h-100 row"
+            >
+              <h4 class="blue-text-title col-2 text-center px-md-3 w-100">
+                Sito MB Runners
+              </h4>
+              <p class="black-text col-6 px-5 pt-3 w-100">
+                Sito web per il club di corsa MB Runners, realizzato in HTML,
+                CSS, JS e Bootstrap con layout responsive.
+              </p>
+              <div class="d-flex col-4 justify-content-end w-100 pe-4 pb-3">
+                <div
+                  class="diamond-2 rounded-2 d-flex align-items-center justify-content-center p-1"
+                ></div>
+              </div>
+            </div>
+          </li>
 
-                            </div>
-                        </div>
+          <!-- Tesi -->
+          <li
+            id="tesi"
+            class="splide__slide d-flex flex-column align-items-center text-center light-blue-background px-2"
+          >
+            <div class="d-flex justify-content-center mb-3">
+              <img
+                src="/img/miniature2.0/miniatura_tesi.png"
+                alt="miniatura progetto"
+                class="img-fluid p-4 p-md-3"
+              />
+            </div>
 
-                    </div>
-                </li>
-
-                <!-- Realtà virtuale -->
-                <li id="miniatura_vr"
-                    class="splide__slide d-flex flex-column align-items-center text-center light-blue-background px-2">
-
-                    <div class="d-flex justify-content-center mb-3">
-                        <img src="/img/miniature2.0/miniatura_vr.svg" alt="miniatura progetto"
-                            class="img-fluid p-4 p-md-3">
-                    </div>
-
-                    <div class="align-items-center d-flex flex-column justify-content-between h-100 row">
-                        <h4 class="blue-text-title col-2 text-center px-md-3 w-100">Progetto Unity</h4>
-                        <p class="black-text col-6 px-5 pt-3 w-100">
-                            Esperienza interattiva ambientata nello spazio, sviluppata in Unity.
-                        </p>
-                        <div class="d-flex col-4 justify-content-end w-100 pe-4 pb-3">
-                            <div class="diamond-2 rounded-2 d-flex align-items-center justify-content-center p-1">
-
-                            </div>
-                        </div>
-
-                    </div>
-                </li>
-
-                <!-- Web App -->
-                <li id="miniatura_web_app"
-                    class="splide__slide d-flex flex-column align-items-center text-center light-blue-background px-2">
-
-                    <div class="d-flex justify-content-center mb-3">
-                        <img src="/img/miniature2.0/miniatura_web_app.svg" alt="miniatura progetto"
-                            class="img-fluid p-4 p-md-3">
-                    </div>
-
-                    <div class="align-items-center d-flex flex-column justify-content-between h-100 row">
-                        <h4 class="blue-text-title col-2 text-center px-md-3 w-100">Progetto React</h4>
-                        <p class="black-text col-6 px-5 pt-3 w-100">
-                            Web App per visualizzare cocktail tramite API TheCocktailDB, realizzata con React,
-                            react-router-dom e Bootstrap.
-                        </p>
-                        <div class="d-flex col-4 justify-content-end w-100 pe-4 pb-3">
-                            <div class="diamond-2 rounded-2 d-flex align-items-center justify-content-center p-1">
-
-                            </div>
-                        </div>
-
-                    </div>
-                </li>
-
-                <!-- CVeDI -->
-                <li id="miniatura_CVeDI"
-                    class="splide__slide d-flex flex-column align-items-center text-center light-blue-background px-2">
-
-                    <div class="d-flex justify-content-center mb-3">
-                        <img src="/img/miniature2.0/miniatura_CVeDI.svg" alt="miniatura progetto"
-                            class="img-fluid p-4 p-md-3">
-                    </div>
-
-                    <div class="align-items-center d-flex flex-column justify-content-between h-100 row">
-                        <h4 class="blue-text-title col-2 text-center px-md-3 w-100">Progetto HTML, CSS, JS e Bootstrap
-                        </h4>
-                        <p class="black-text col-6 px-5 pt-3 w-100">
-                            Interfaccia per totem informativi turistici, sviluppata in HTML, CSS, JS e Bootstrap.
-                        </p>
-                        <div class="d-flex col-4 justify-content-end w-100 pe-4 pb-3">
-                            <div class="diamond-2 rounded-2 d-flex align-items-center justify-content-center p-1">
-
-                            </div>
-                        </div>
-
-                    </div>
-                </li>
-
-                <!-- Volantino -->
-                <li id="volantino"
-                    class="splide__slide d-flex flex-column align-items-center text-center light-blue-background px-2">
-
-                    <div class="d-flex justify-content-center mb-3">
-                        <img src="/img/miniature2.0/miniatura_volantino.svg" alt="miniatura progetto"
-                            class="img-fluid p-4 p-md-3">
-                    </div>
-
-                    <div class="align-items-center d-flex flex-column justify-content-between h-100 row">
-                        <h4 class="blue-text-title col-2 text-center px-md-3 w-100">Volantino pizzeria</h4>
-                        <p class="black-text col-6 px-5 pt-3 w-100">
-                            Restyling grafico di un volantino di una pizzeria realizzato con Figma e Canva.
-                        </p>
-                        <div class="d-flex col-4 justify-content-end w-100 pe-4 pb-3">
-                            <div class="diamond-2 rounded-2 d-flex align-items-center justify-content-center p-1">
-
-                            </div>
-                        </div>
-
-                    </div>
-                </li>
-
-                <!-- MB Runners -->
-                <li id="miniatura_mbRunners"
-                    class="splide__slide d-flex flex-column align-items-center text-center light-blue-background px-2">
-
-                    <div class="d-flex justify-content-center mb-3">
-                        <img src="/img/miniature2.0/miniatura_mbRunners.svg" alt="miniatura progetto"
-                            class="img-fluid p-4 p-md-3">
-                    </div>
-
-                    <div class="align-items-center d-flex flex-column justify-content-between h-100 row">
-                        <h4 class="blue-text-title col-2 text-center px-md-3 w-100">Sito MB Runners</h4>
-                        <p class="black-text col-6 px-5 pt-3 w-100">
-                            Sito web per il club di corsa MB Runners, realizzato in HTML, CSS, JS e Bootstrap con layout
-                            responsive.
-                        </p>
-                        <div class="d-flex col-4 justify-content-end w-100 pe-4 pb-3">
-                            <div class="diamond-2 rounded-2 d-flex align-items-center justify-content-center p-1">
-
-                            </div>
-                        </div>
-
-                    </div>
-                </li>
-
-                <!-- Tesi -->
-                <li id="tesi"
-                    class="splide__slide d-flex flex-column align-items-center text-center light-blue-background px-2">
-
-                    <div class="d-flex justify-content-center mb-3">
-                        <img src="/img/miniature2.0/miniatura_tesi.png" alt="miniatura progetto"
-                            class="img-fluid p-4 p-md-3">
-                    </div>
-
-                    <div class="align-items-center d-flex flex-column justify-content-between h-100 row">
-                        <h4 class="blue-text-title col-2 text-center px-md-3 w-100">Progetto Unity + JaCaMo</h4>
-                        <p class="black-text col-6 px-5 pt-3 w-100">
-                            Stage e tesi nel settore VR con sviluppo in Unity e JaCaMo.
-                        </p>
-                        <div class="d-flex col-4 justify-content-end w-100 pe-4 pb-3">
-                            <div class="diamond-2 rounded-2 d-flex align-items-center justify-content-center p-1">
-                            </div>
-                        </div>
-
-                    </div>
-                </li>
-
-            </ul>
-        </div>
+            <div
+              class="align-items-center d-flex flex-column justify-content-between h-100 row"
+            >
+              <h4 class="blue-text-title col-2 text-center px-md-3 w-100">
+                Progetto Unity + JaCaMo
+              </h4>
+              <p class="black-text col-6 px-5 pt-3 w-100">
+                Stage e tesi nel settore VR con sviluppo in Unity e JaCaMo.
+              </p>
+              <div class="d-flex col-4 justify-content-end w-100 pe-4 pb-3">
+                <div
+                  class="diamond-2 rounded-2 d-flex align-items-center justify-content-center p-1"
+                ></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
-
 
     <!-- Footer -->
     <footer>
-        <div class="m-0 p-5 row w-100 white-text-title footer">
-            <!-- Link -->
-            <div class="align-items-center col-12 col-md-8 d-flex justify-content-center justify-content-md-start">
-                <ul class="list-unstyled text-center text-md-start">
-                    <li class="pb-3"><a href="index.html" class="h4 text-decoration-none active">Home</a></li>
-                    <li class="pb-3"><a href="#aboutme" class="h4 text-decoration-none">About Me</a></li>
-                    <li class="pb-3"><a href="#image-text-slider" class="h4 text-decoration-none">Projects</a></li>
-                </ul>
-            </div>
-
-            <!-- Social -->
-            <div
-                class="align-items-center col-12 col-md-4 d-flex justify-content-center justify-content-md-start text-center text-md-start socialCol">
-                <div class="d-block row align-items-center justify-content-center">
-                    <div class="align-items-center col d-flex gap-3 pb-3">
-                        <a href="mailto:michela.mariani01@gmail.com" target="_blank" class="social-link"
-                            data-hover="instagramHover.png">
-                            <img src="icons/gmail.svg" class="iconFooter" alt="Instagram">
-                        </a>
-                        <a href="mailto:michela.mariani01@gmail.com" target="_blank"
-                            class="mb-0 text-decoration-none white-text-title">michela.mariani01</a>
-                    </div>
-
-                    <div class="align-items-center col d-flex gap-3 pb-3">
-                        <a href="https://www.linkedin.com/in/michela-mariani-6a2372271/" class="social-link"
-                            target="_blank" data-hover="linkedinHover.png">
-                            <img src="icons/linkedin.svg" class="iconFooter" alt="LinkedIn">
-                        </a>
-                        <a href="https://www.linkedin.com/in/michela-mariani-6a2372271/" target="_blank"
-                            class="mb-0 text-decoration-none white-text-title">Michela Mariani</a>
-                    </div>
-
-                    <div class="align-items-center col d-flex gap-3 pb-3">
-                        <a href="https://github.com/onlymiki" class="social-link" target="_blank"
-                            data-hover="gitHover.png">
-                            <img src="icons/github.svg" class="iconFooter" alt="GitHub">
-                        </a>
-                        <a href="https://github.com/onlymiki" target="_blank"
-                            class="mb-0 text-decoration-none white-text-title">only.miki</a>
-                    </div>
-                </div>
-            </div>
-
-            <h6 class="col-12 pt-4 text-center">© 2025 Michela Mariani - Tutti i diritti riservati</h6>
+      <div class="m-0 p-5 row w-100 white-text-title footer">
+        <!-- Link -->
+        <div
+          class="align-items-center col-12 col-md-8 d-flex justify-content-center justify-content-md-start"
+        >
+          <ul class="list-unstyled text-center text-md-start">
+            <li class="pb-3">
+              <a href="index.html" class="h4 text-decoration-none active"
+                >Home</a
+              >
+            </li>
+            <li class="pb-3">
+              <a href="#aboutme" class="h4 text-decoration-none">About Me</a>
+            </li>
+            <li class="pb-3">
+              <a href="#image-text-slider" class="h4 text-decoration-none"
+                >Projects</a
+              >
+            </li>
+          </ul>
         </div>
+
+        <!-- Social -->
+        <div
+          class="align-items-center col-12 col-md-4 d-flex justify-content-center justify-content-md-start text-center text-md-start socialCol"
+        >
+          <div class="d-block row align-items-center justify-content-center">
+            <div class="align-items-center col d-flex gap-3 pb-3">
+              <a
+                href="mailto:michela.mariani01@gmail.com"
+                target="_blank"
+                class="social-link"
+                data-hover="instagramHover.png"
+              >
+                <img src="icons/gmail.svg" class="iconFooter" alt="Instagram" />
+              </a>
+              <a
+                href="mailto:michela.mariani01@gmail.com"
+                target="_blank"
+                class="mb-0 text-decoration-none white-text-title"
+                >michela.mariani01</a
+              >
+            </div>
+
+            <div class="align-items-center col d-flex gap-3 pb-3">
+              <a
+                href="https://www.linkedin.com/in/michela-mariani-6a2372271/"
+                class="social-link"
+                target="_blank"
+                data-hover="linkedinHover.png"
+              >
+                <img
+                  src="icons/linkedin.svg"
+                  class="iconFooter"
+                  alt="LinkedIn"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/michela-mariani-6a2372271/"
+                target="_blank"
+                class="mb-0 text-decoration-none white-text-title"
+                >Michela Mariani</a
+              >
+            </div>
+
+            <div class="align-items-center col d-flex gap-3 pb-3">
+              <a
+                href="https://github.com/onlymiki"
+                class="social-link"
+                target="_blank"
+                data-hover="gitHover.png"
+              >
+                <img src="icons/github.svg" class="iconFooter" alt="GitHub" />
+              </a>
+              <a
+                href="https://github.com/onlymiki"
+                target="_blank"
+                class="mb-0 text-decoration-none white-text-title"
+                >only.miki</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <h6 class="col-12 pt-4 text-center">
+          © 2025 Michela Mariani - Tutti i diritti riservati
+        </h6>
+      </div>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script>
+      AOS.init({
+        duration: 1500, // durata dell'animazione (in ms)
+        once: true, // l'animazione dovrebbe essere eseguita solo una volta
+        //disable: 'mobile'    // disabilita AOS su dispositivi mobili
+      });
 
-        AOS.init({
-            duration: 1500,      // durata dell'animazione (in ms)
-            once: true         // l'animazione dovrebbe essere eseguita solo una volta
-            //disable: 'mobile'    // disabilita AOS su dispositivi mobili
+      // Classe active
+      const allLinks = document.querySelectorAll(".navbar-nav a, footer a");
+
+      allLinks.forEach((link) => {
+        link.addEventListener("click", function (e) {
+          const target = this.getAttribute("href");
+          if (target.startsWith("#")) {
+            e.preventDefault();
+            document
+              .querySelector(target)
+              ?.scrollIntoView({ behavior: "smooth" });
+          }
+          allLinks.forEach((l) => l.classList.remove("active"));
+          document.querySelectorAll(`a[href="${target}"]`).forEach((l) => {
+            l.classList.add("active");
+          });
         });
+      });
 
-        // Classe active
-        const allLinks = document.querySelectorAll('.navbar-nav a, footer a');
+      // Slider
+      let lightBlueButton = document.getElementsByClassName("light-blue-btn");
+      let miniaturaSAM = document.getElementById("miniatura_sam");
+      let miniaturaErgonomia = document.getElementById("miniatura_ergonomia");
+      let miniaturaSistemi = document.getElementById(
+        "miniatura_sistemi_informativi"
+      );
+      let miniaturaVR = document.getElementById("miniatura_vr");
+      let miniaturaWebApp = document.getElementById("miniatura_web_app");
+      let miniaturaCVeDI = document.getElementById("miniatura_CVeDI");
+      let volantino = document.getElementById("volantino");
+      let miniaturaMBRunners = document.getElementById("miniatura_mbRunners");
+      let tesi = document.getElementById("tesi");
 
-        allLinks.forEach(link => {
-            link.addEventListener('click', function (e) {
-                const target = this.getAttribute('href');
-                if (target.startsWith('#')) {
-                    e.preventDefault();
-                    document.querySelector(target)?.scrollIntoView({ behavior: 'smooth' });
-                }
-                allLinks.forEach(l => l.classList.remove('active'));
-                document.querySelectorAll(`a[href="${target}"]`).forEach(l => {
-                    l.classList.add('active');
-                });
-            });
-        });
+      miniaturaSAM.addEventListener("click", function () {
+        window.location.href = "sam.html";
+      });
 
-        // Slider
-        let lightBlueButton = document.getElementsByClassName("light-blue-btn");
-        let miniaturaSAM = document.getElementById("miniatura_sam");
-        let miniaturaErgonomia = document.getElementById("miniatura_ergonomia");
-        let miniaturaSistemi = document.getElementById("miniatura_sistemi_informativi");
-        let miniaturaVR = document.getElementById("miniatura_vr");
-        let miniaturaWebApp = document.getElementById("miniatura_web_app");
-        let miniaturaCVeDI = document.getElementById("miniatura_CVeDI");
-        let volantino = document.getElementById("volantino");
-        let miniaturaMBRunners = document.getElementById("miniatura_mbRunners");
-        let tesi = document.getElementById("tesi");
+      miniaturaErgonomia.addEventListener("click", function () {
+        window.location.href = "ergonomia.html";
+      });
 
-        miniaturaSAM.addEventListener("click", function () {
-            window.location.href = "sam.html";
-        });
+      miniaturaSistemi.addEventListener("click", function () {
+        window.location.href = "sistemi.html";
+      });
 
-        miniaturaErgonomia.addEventListener("click", function () {
-            window.location.href = "ergonomia.html";
-        });
+      miniaturaVR.addEventListener("click", function () {
+        window.location.href = "vr.html";
+      });
 
-        miniaturaSistemi.addEventListener("click", function () {
-            window.location.href = "sistemi.html";
-        });
+      miniaturaWebApp.addEventListener("click", function () {
+        window.location.href = "webApp.html";
+      });
 
-        miniaturaVR.addEventListener("click", function () {
-            window.location.href = "vr.html";
-        });
+      miniaturaCVeDI.addEventListener("click", function () {
+        window.location.href = "cvedi.html";
+      });
 
-        miniaturaWebApp.addEventListener("click", function () {
-            window.location.href = "webApp.html";
-        });
+      volantino.addEventListener("click", function () {
+        window.location.href = "volantino.html";
+      });
 
-        miniaturaCVeDI.addEventListener("click", function () {
-            window.location.href = "cvedi.html";
-        });
+      miniaturaMBRunners.addEventListener("click", function () {
+        window.location.href = "mbrunners.html";
+      });
 
-        volantino.addEventListener("click", function () {
-            window.location.href = "volantino.html";
-        });
+      tesi.addEventListener("click", function () {
+        window.location.href = "tesi.html";
+      });
 
-        miniaturaMBRunners.addEventListener("click", function () {
-            window.location.href = "mbrunners.html";
-        });
+      //Carosello
+      document.addEventListener("DOMContentLoaded", function () {
+        new Splide("#image-text-slider", {
+          type: "loop",
+          perPage: 4,
+          gap: "2rem",
+          pagination: true,
+          arrows: true,
+          autoplay: true,
+          interval: 4000,
+          padding: 0,
+          breakpoints: {
+            1400: { perPage: 3, padding: 0 },
+            1000: { perPage: 2, padding: 0 },
+            768: { perPage: 1, padding: 0 },
+          },
+        }).mount();
+      });
 
-        tesi.addEventListener("click", function () {
-            window.location.href = "tesi.html";
-        });
+      // Per scroll navabar
+      let lastScrollTop = 0;
+      const navbar = document.querySelector(".header");
 
-        //Carosello
-        document.addEventListener('DOMContentLoaded', function () {
-            new Splide('#image-text-slider', {
-                type: 'loop',
-                perPage: 4,
-                gap: '2rem',
-                pagination: true,
-                arrows: true,
-                autoplay: true,
-                interval: 4000,
-                padding: 0,
-                breakpoints: {
-                    1400: { perPage: 3, padding: 0 },
-                    1000: { perPage: 2, padding: 0 },
-                    768: { perPage: 1, padding: 0 },
-                },
-            }).mount();
-        });
+      window.addEventListener("scroll", () => {
+        const currentScroll =
+          window.pageYOffset || document.documentElement.scrollTop;
 
+        if (currentScroll > lastScrollTop && currentScroll > 100) {
+          navbar.classList.add("nav-hidden");
+        } else {
+          navbar.classList.remove("nav-hidden");
+        }
 
-        // Per scroll navabar
-        let lastScrollTop = 0;
-        const navbar = document.querySelector('.header');
-
-        window.addEventListener('scroll', () => {
-            const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-            if (currentScroll > lastScrollTop && currentScroll > 100) {
-                navbar.classList.add('nav-hidden');
-            } else {
-                navbar.classList.remove('nav-hidden');
-            }
-
-            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-        });
-
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+      });
     </script>
-
-</body>
-
+  </body>
 </html>
