@@ -60,6 +60,10 @@ body {
     font-size: 16px;
 }
 
+.small{
+    font-size: 14px;
+}
+
 /* ----- Background ----- */
 .light-blue-background {
     background-color: var(--color-light-blue);
