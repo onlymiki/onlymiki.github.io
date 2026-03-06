@@ -154,7 +154,7 @@
               data-aos="fade-up"
             >
               <h3 class="no-rotate white-text-title text-center">93</h3>
-              <p class="no-rotate pt-3 white-text text-center small">/110</p>
+              <p class="no-rotate pt-3 white-text text-center small">/100</p>
             </div>
           </div>
         </div>
@@ -677,6 +677,37 @@
               </div>
             </div>
           </li>
+
+          <!-- Pizzeria -->
+          <li
+            id="pizzeria"
+            class="splide__slide d-flex flex-column align-items-center text-center light-blue-background px-2"
+          >
+            <div class="d-flex justify-content-center mb-3">
+              <img
+                src="/img/miniature2.0/miniatura_pizzeria.png"
+                alt="miniatura progetto"
+                class="img-fluid p-4 p-md-3"
+              />
+            </div>
+
+            <div
+              class="align-items-center d-flex flex-column justify-content-between h-100 row"
+            >
+              <h4 class="blue-text-title col-2 text-center px-md-3 w-100">
+                Sito Pizzeria La Cometa
+              </h4>
+              <p class="black-text col-6 px-5 pt-3 w-100">
+                Refator sito web di una pizzeria, realizzato con React,
+                Javascript e Tailwind.
+              </p>
+              <div class="d-flex col-4 justify-content-end w-100 pe-4 pb-3">
+                <div
+                  class="diamond-2 rounded-2 d-flex align-items-center justify-content-center p-1"
+                ></div>
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
     </div>
@@ -817,6 +848,7 @@
       let volantino = document.getElementById("volantino");
       let miniaturaMBRunners = document.getElementById("miniatura_mbRunners");
       let tesi = document.getElementById("tesi");
+      let pizzeria = document.getElementById("pizzeria");
 
       miniaturaSAM.addEventListener("click", function () {
         window.location.href = "sam.html";
@@ -852,6 +884,10 @@
 
       tesi.addEventListener("click", function () {
         window.location.href = "tesi.html";
+      });
+
+      pizzeria.addEventListener("click", function () {
+        window.location.href = "pizzeria.html";
       });
 
       //Carosello
